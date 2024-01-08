@@ -5,6 +5,9 @@
 #include <dt-bindings/zmk/backlight.h>
 
 
+#define ______ &trans
+#define xxxxxx &none
+
 #define QWERTY 0
 #define DVORAK 1
 #define KEYPAD 2
@@ -200,51 +203,51 @@
 
         qwerty {
             bindings = <
-                &kp EQUAL  &kp N1        &kp N2        &kp N3         &kp N4         &kp N5  &tog KEYPAD                                                 &mo MOD    &kp N6  &kp N7         &kp N8         &kp N9        &kp N0           &kp MINUS
-                &kp TAB    &kp Q         &kp W         &kp E          &kp R          &kp T   &to QWERTY                                                  &kp INS    &kp Y   &kp U          &kp I          &kp O         &kp P            &kp BSLH
-                &kp ESC    &hm_l LGUI A  &hm_l LALT S  &hm_l LCTRL D  &hm_l LSHFT F  &kp G   &to DVORAK   &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &kp PSCRN  &kp H   &hm_r RSHFT J  &hm_r RCTRL K  &hm_r RALT L  &hm_r RGUI SEMI  &kp SQT
-                &kp LSHFT  &kp Z         &kp X         &kp C          &kp V          &kp B                           &kp HOME      &kp PG_UP                        &kp N   &kp M          &kp COMMA      &kp DOT       &kp FSLH         &kp RSHFT
-                &mo FN     &kp GRAVE     &kp CAPS      &kp LEFT       &kp RIGHT              &kp BSPC     &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP         &kp DOWN       &kp LBKT      &kp RBKT         &mo FN
+                &kp EQUAL  &kp N1        &kp N2        &kp N3         &kp N4         &kp N5        &tog KEYPAD                                                 &mo MOD    &kp N6  &kp N7         &kp N8         &kp N9        &kp N0           &kp MINUS
+                &kp TAB    &kp Q         &kp W         &kp E          &kp R          &kp T         &to QWERTY                                                  &kp PSCRN  &kp Y   &kp U          &kp I          &kp O         &kp P            &kp BSLH
+                &kp ESC    &hm_l LGUI A  &hm_l LALT S  &hm_l LCTRL D  &hm_l LSHFT F  &lt KEYPAD G  &to DVORAK   &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &kp INS    &kp H   &hm_r RSHFT J  &hm_r RCTRL K  &hm_r RALT L  &hm_r RGUI SEMI  &kp SQT
+                &kp LSHFT  &kp Z         &kp X         &kp C          &kp V          &kp B                                 &kp HOME      &kp PG_UP                        &kp N   &kp M          &kp COMMA      &kp DOT       &kp FSLH         &kp RSHFT
+                &mo FN     &kp GRAVE     &kp CAPS      &kp LEFT       &kp RIGHT                    &kp BSPC     &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP         &kp DOWN       &kp LBKT      &kp RBKT         &mo FN
             >;
         };
 
         dvorak_prog_prime {
             bindings = <
-                &pgrave    &pkp_n1      &lkp_n2       &lkp_n3        &lkp_n4        &akp_n5  &tog KEYPAD                                                 &mo MOD    &ekp_n6  &rkp_n7        &rkp_n8        &rkp_n9       &skp_n0       &eprcnt
-                &kp TAB    &kp SEMI     &kp COMMA     &kp DOT        &kp P          &kp Y    &to QWERTY                                                  &kp INS    &kp F    &kp G          &kp C          &kp R         &kp L         &bhash
-                &kp ESC    &hm_l LGUI A &hm_l LALT O  &hm_l LCTRL E  &hm_l LSHFT U  &kp I    &to DVORAK   &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &kp PSCRN  &kp D    &hm_r RSHFT H  &hm_r RCTRL T  &hm_r RALT N  &hm_r RGUI S  &kp MINUS
-                &kp LSHFT  &kp APOS     &kp Q         &kp J          &kp K          &kp X                            &kp HOME      &kp PG_UP                        &kp B    &kp M          &kp W          &kp V         &kp Z         &kp RSHFT
-                &mo FN     &dtilde      &kp CAPS      &kp LEFT       &kp RIGHT               &kp BSPC     &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE           &kp UP         &kp DOWN       &kp FSLH      &acaret       &mo FN
+                &pgrave  &pkp_n1       &lkp_n2       &lkp_n3        &lkp_n4        &akp_n5       ______                                      ______  &ekp_n6  &rkp_n7        &rkp_n8        &rkp_n9       &skp_n0       &eprcnt
+                ______   &kp SEMI      &kp COMMA     &kp DOT        &kp P          &kp Y         ______                                      ______  &kp F    &kp G          &kp C          &kp R         &kp L         &bhash
+                ______   &hm_l LGUI A  &hm_l LALT O  &hm_l LCTRL E  &hm_l LSHFT U  &lt KEYPAD I  ______  ______  ______      ______  ______  ______  &kp D    &hm_r RSHFT H  &hm_r RCTRL T  &hm_r RALT N  &hm_r RGUI S  ______
+                ______   &kp APOS      &kp Q         &kp J          &kp K          &kp X                         ______      ______                  &kp B    &kp M          &kp W          &kp V         &kp Z         ______
+                ______   &dtilde       ______        ______         ______                       ______  ______  ______      ______  ______  ______           ______         ______         &kp FSLH      &acaret       ______
             >;
         };
 
         keypad {
             bindings = <
-                &trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans     &trans  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &trans
-                &trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans     &trans  &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &trans
-                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans     &trans  &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &trans
-                &trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                     &trans  &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &trans
-                &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &kp KP_N0          &trans      &trans        &kp KP_DOT     &trans           &trans
+                ______  ______  ______  ______  ______  ______  ______                                      ______     ______  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  ______
+                ______  ______  ______  ______  ______  ______  ______                                      ______     ______  &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     ______
+                ______  ______  ______  ______  ______  ______  ______  ______  ______      ______  ______  ______     ______  &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      ______
+                ______  ______  ______  ______  ______  ______                  ______      ______                     ______  &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     ______
+                ______  ______  ______  ______  ______          ______  ______  ______      ______  ______  &kp KP_N0          ______      ______        &kp KP_DOT     ______           ______
             >;
         };
 
         fn {
             bindings = <
-                &kp F1  &kp F2  &kp F3     &kp F4  &kp F5  &kp F6  &trans                                      &trans  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-                &trans  &trans  &trans     &trans  &trans  &trans  &none                                       &none   &trans  &trans  &trans  &trans   &trans   &trans
-                &trans  &trans  &trans     &trans  &trans  &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans   &trans   &trans
-                &trans  &trans  &trans     &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans   &trans   &trans
-                &trans  &trans  &kp K_APP  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans   &trans   &trans
+                &kp F1  &kp F2  &kp F3     &kp F4  &kp F5  &kp F6  ______                                      ______  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+                ______  ______  ______     ______  ______  ______  xxxxxx                                      xxxxxx  ______  ______  ______  ______   ______   ______
+                ______  ______  ______     ______  ______  ______  xxxxxx  ______  ______      ______  ______  xxxxxx  ______  ______  ______  ______   ______   ______
+                ______  ______  ______     ______  ______  ______                  ______      ______                  ______  ______  ______  ______   ______   ______
+                ______  ______  &kp K_APP  ______  ______          ______  ______  ______      ______  ______  ______          ______  ______  ______   ______   ______
             >;
         };
 
         mod {
             bindings = <
-                &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                  &trans                  &none  &none       &none       &none  &none  &none
-                &none  &none         &none         &none         &none         &none         &bootloader                                            &bootloader             &none  &none       &none       &none  &none  &none
-                &none  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none       &none  &none  &none
-                &none  &none         &none         &none         &macro_ver    &none                             &none      &none                                           &none  &none       &none       &none  &none  &none
-                &none  &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC  &bl BL_DEC  &none  &none  &none
+                xxxxxx  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  xxxxxx                                                  ______                  xxxxxx  xxxxxx      xxxxxx      xxxxxx  xxxxxx  xxxxxx
+                xxxxxx  xxxxxx        xxxxxx        xxxxxx        xxxxxx        xxxxxx        &bootloader                                             &bootloader             xxxxxx  xxxxxx      xxxxxx      xxxxxx  xxxxxx  xxxxxx
+                xxxxxx  xxxxxx        xxxxxx        xxxxxx        xxxxxx        xxxxxx        xxxxxx       xxxxxx  xxxxxx     &bt BT_CLR  xxxxxx      &rgb_ug RGB_MEFS_CMD 5  xxxxxx  xxxxxx      xxxxxx      xxxxxx  xxxxxx  xxxxxx
+                xxxxxx  xxxxxx        xxxxxx        xxxxxx        &macro_ver    xxxxxx                             xxxxxx     xxxxxx                                          xxxxxx  xxxxxx      xxxxxx      xxxxxx  xxxxxx  xxxxxx
+                xxxxxx  xxxxxx        xxxxxx        xxxxxx        xxxxxx                      xxxxxx       xxxxxx  xxxxxx     xxxxxx      &bl BL_TOG  &rgb_ug RGB_TOG                 &bl BL_INC  &bl BL_DEC  xxxxxx  xxxxxx  xxxxxx
             >;
         };
     };
