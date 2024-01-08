@@ -1,3 +1,13 @@
+# Personal Configuration for kinesis adv 360
+
+This config includes two layouts
+- Qwerty with homerow mods
+![qwerty layout](./assets/kinesis360-qwerty.png)
+
+- Real programing dvorak (inspired by The Primeagen) also with homerow mods.
+![dvorak layout](./assets/kinesis360-programmer-dvorak.png)
+
+
 # Kinesis Advantage 360 Pro ZMK Config
 
 ## Modifying the keymap
