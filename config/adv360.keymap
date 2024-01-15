@@ -179,7 +179,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "pipe_grave";
             #binding-cells = <0>;
-            bindings = <&kp PIPE>, <&kp PIPE>;
+            bindings = <&kp PIPE>, <&kp GRAVE>;
             mods = <(LGUI|LSHIFT|RGUI|RSHIFT)>;
         };
         bhash: bslh_hash {
