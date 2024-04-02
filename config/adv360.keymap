@@ -26,41 +26,41 @@
 
         default_layer {
             bindings = <
-&kp EQUAL  &kp N1     &kp N2  &kp N3    &kp N4     &kp N5  &kp F20                                                      &mo 3      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp ESC    &kp Q      &kp W   &kp E     &kp R      &kp T   &kp F21                                                      &kp F23    &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
-&kp TAB    &kp A      &kp S   &kp D     &kp F      &kp G   &kp F22  &kp HOME   &kp END        &kp PG_UP  &kp PG_DN      &kp F24    &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z      &kp X   &kp C     &kp V      &kp B                       &kp LALT       &none                                &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&mo 1      &kp GRAVE  &mo 2   &kp LEFT  &kp RIGHT          &kp DEL  &kp SPACE  &kp LCTRL      &kp RWIN   &kp BACKSPACE  &kp ENTER          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 1
+&kp DEL    &kp N1     &kp N2  &kp N3    &kp N4     &kp N5  &kp F20                                                      &mo 3      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &none
+&kp EQUAL  &kp Q      &kp W   &kp E     &kp R      &kp T   &kp F21                                                      &kp F23    &kp Y   &kp U   &kp I      &kp O     &kp P     &kp MINUS
+&kp ESC    &kp A      &kp S   &kp D     &kp F      &kp G   &kp F22  &kp HOME   &kp END        &kp PG_UP  &kp PG_DN      &kp F24    &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z      &kp X   &kp C     &kp V      &kp B                       &kp LALT       &none                                &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp BSLH
+&mo 1      &kp GRAVE  &mo 2   &kp LEFT  &kp RIGHT          &kp TAB  &kp SPACE  &kp LCTRL      &kp LWIN   &kp BACKSPACE  &kp ENTER          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 1
             >;
         };
 
         layer_fn {
             bindings = <
-&none     &kp F1            &kp F2   &kp F3      &kp F4      &kp F5   &none                                                          &trans  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10  &kp CAPSLOCK
-&kp F10   &kp F11           &kp F12  &kp F13     &kp F14     &kp F15  &none                                                          &none   &kp F16  &kp F17  &kp F18  &kp F19  &kp F20  &kp KP_NUMLOCK
-&kp F20   &kp F21           &kp F22  &kp F23     &kp F24     &none    &none            &none      &none                &none  &none  &none   &none    &none    &none    &none    &none    &kp SCROLLLOCK
-&kp LALT  &none             &none    &none       &none       &none                                &kp PRINTSCREEN      &none                 &none    &none    &none    &none    &none    &kp RALT
-&mo 0     &kp K_PLAY_PAUSE  &none    &kp K_PREV  &kp K_NEXT           &kp LC(LA(TAB))  &kp ENTER  &kp PAUSE_BREAK      &none  &none  &none            &none    &none    &none    &none    &to 0
+&none     &kp F1            &kp F2   &kp F3      &kp F4      &kp F5   &none                                                      &none  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10  &kp CAPSLOCK
+&kp F10   &kp F11           &kp F12  &kp F13     &kp F14     &kp F15  &none                                                      &none  &kp F16  &kp F17  &kp F18  &kp F19  &kp F20  &kp KP_NUMLOCK
+&kp F20   &kp F21           &kp F22  &kp F23     &kp F24     &none    &none            &none  &none                &none  &none  &none  &none    &none    &none    &none    &none    &kp SCROLLLOCK
+&kp LALT  &none             &none    &none       &none       &none                            &kp PRINTSCREEN      &none                &none    &none    &none    &none    &none    &kp RALT
+&mo 0     &kp K_PLAY_PAUSE  &none    &kp K_PREV  &kp K_NEXT           &kp LA(LC(TAB))  &none  &kp PAUSE_BREAK      &none  &none  &none           &none    &none    &none    &none    &to 0
             >;
         };
 
         layer_nav {
             bindings = <
-&none  &none       &none  &none         &none         &none  &none                                            &trans  &none  &none  &none  &none  &none  &none
-&none  &none       &none  &none         &none         &none  &none                                            &none   &none  &none  &none  &none  &none  &none
-&none  &none       &none  &none         &none         &none  &none        &none      &none      &none  &none  &none   &none  &none  &none  &none  &none  &none
-&none  &none       &none  &none         &none         &none                          &none      &none                 &none  &none  &none  &none  &none  &none
-&none  &kp K_MUTE  &none  &kp K_VOL_DN  &kp K_VOL_UP         &kp LA(TAB)  &kp ENTER  &none      &none  &none  &none          &none  &none  &none  &none  &none
+&none  &none       &none  &none         &none         &none  &none                                            &none  &none  &none  &none  &none  &none  &none
+&none  &none       &none  &none         &none         &none  &none                                            &none  &none  &none  &none  &none  &none  &none
+&none  &none       &none  &none         &none         &none  &none        &none      &none      &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none       &none  &none         &none         &none                          &none      &none                &none  &none  &none  &none  &none  &none
+&mo 0  &kp K_MUTE  &none  &kp K_VOL_DN  &kp K_VOL_UP         &kp LA(TAB)  &kp ENTER  &none      &none  &none  &none         &none  &none  &none  &none  &to 0
             >;
         };
 
         layer_mod {
             bindings = <
-&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                  &trans                  &none  &none       &none       &none  &none  &none
+&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                  &none                   &none  &none       &none       &none  &none  &none
 &none  &none         &none         &none         &none         &none         &bootloader                                            &bootloader             &none  &none       &none       &none  &none  &none
 &none  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none       &none  &none  &none
 &none  &none         &none         &none         &macro_ver    &none                             &none      &none                                           &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC  &bl BL_DEC  &none  &none  &none
+&mo 0  &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC  &bl BL_DEC  &none  &none  &to 0
             >;
         };
     };
