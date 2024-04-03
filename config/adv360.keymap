@@ -38,31 +38,21 @@
 
         layer_base {
             bindings = <
-&kp DEL    &kp N1     &kp N2  &kp N3    &kp N4     &kp N5  &kp F20                                                      &none      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &none
-&kp EQUAL  &kp Q      &kp W   &kp E     &kp R      &kp T   &kp F21                                                      &kp F23    &kp Y   &kp U   &kp I      &kp O     &kp P     &kp MINUS
-&kp ESC    &kp A      &kp S   &kp D     &kp F      &kp G   &kp F22  &kp HOME   &kp END        &kp PG_UP  &kp PG_DN      &kp F24    &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z      &kp X   &kp C     &kp V      &kp B                       &kp LALT       &kp LGUI                             &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp BSLH
-&mo 3      &kp GRAVE  &mo 4   &kp LEFT  &kp RIGHT          &kp TAB  &kp SPACE  &kp LCTRL      &kp LSHFT  &kp BACKSPACE  &kp ENTER          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &none
-            >;
-        };
-
-        layer_o_enable_flip {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                            &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                            &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                        &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &lt_hp 2 TAB  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&kp DEL    &kp N1     &kp N2  &kp N3    &kp N4     &kp N5  &kp F20                                                           &none      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &none
+&kp EQUAL  &kp Q      &kp W   &kp E     &kp R      &kp T   &kp F21                                                           &kp F23    &kp Y   &kp U   &kp I      &kp O     &kp P     &kp MINUS
+&kp ESC    &kp A      &kp S   &kp D     &kp F      &kp G   &kp F22       &kp HOME   &kp END        &kp PG_UP  &kp PG_DN      &kp F24    &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z      &kp X   &kp C     &kp V      &kp B                            &kp LALT       &kp LGUI                             &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp BSLH
+&mo 2      &kp GRAVE  &mo 3   &kp LEFT  &kp RIGHT          &lt_hp 1 TAB  &kp SPACE  &kp LCTRL      &kp LSHFT  &kp BACKSPACE  &kp ENTER          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &none
             >;
         };
 
         layer_o_flip {
             bindings = <
-&trans     &kp N0    &kp N9    &kp N8     &kp N7  &kp N6  &trans                                       &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp MINUS  &kp P     &kp O     &kp I      &kp U   &kp Y   &kp F23                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp SQT    &kp SEMI  &kp L     &kp K      &kp J   &kp H   &kp F24  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp BSLH   &kp FSLH  &kp DOT   &kp COMMA  &kp M   &kp N                    &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &kp RBKT  &kp LBKT  &kp DOWN   &kp UP          &trans   &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans     &kp N0    &kp N9    &kp N8     &kp N7  &kp N6  &trans                                                   &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp MINUS  &kp P     &kp O     &kp I      &kp U   &kp Y   &kp F23                                                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp SQT    &kp SEMI  &kp L     &kp K      &kp J   &kp H   &kp F24    &kp PG_DN      &kp PG_UP      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp BSLH   &kp FSLH  &kp DOT   &kp COMMA  &kp M   &kp N                             &kp LGUI       &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &kp RBKT  &kp LBKT  &kp DOWN   &kp UP          &kp ENTER  &kp BACKSPACE  &kp LSHFT      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -78,7 +68,7 @@
 
         layer_m_nav {
             bindings = <
-&tog 5  &none       &none  &none         &none         &none  &tog 1                                           &none  &none  &none  &none  &none  &none  &none
+&tog 4  &none       &none  &none         &none         &none  &tog 0                                           &none  &none  &none  &none  &none  &none  &none
 &none   &none       &none  &none         &none         &none  &none                                            &none  &none  &none  &none  &none  &none  &none
 &none   &none       &none  &none         &none         &none  &none        &none      &none      &none  &none  &none  &none  &none  &none  &none  &none  &none
 &none   &none       &none  &none         &none         &none                          &none      &none                &none  &none  &none  &none  &none  &none
@@ -92,7 +82,7 @@
 &none                   &none         &none         &none         &none         &none         &bootloader                                            &bootloader      &none  &none       &none       &none  &none  &none
 &none                   &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &none            &none  &none       &none       &none  &none  &none
 &none                   &none         &none         &none         &macro_ver    &none                             &none      &none                                    &none  &none       &none       &none  &none  &none
-&tog 5                  &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG         &bl BL_INC  &bl BL_DEC  &none  &none  &tog 5
+&tog 4                  &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG         &bl BL_INC  &bl BL_DEC  &none  &none  &tog 4
             >;
         };
     };
