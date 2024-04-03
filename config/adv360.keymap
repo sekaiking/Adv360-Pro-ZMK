@@ -38,11 +38,11 @@
 
         layer_o_enable_flip {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &mo 2   &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                         &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                         &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                     &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &lt 2 TAB  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -59,7 +59,7 @@
         layer_m_fn {
             bindings = <
 &rgb_ug RGB_MEFS_CMD 5  &kp F1            &kp F2   &kp F3      &kp F4      &kp F5   &none                                                        &none  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10  &kp CAPSLOCK
-&kp F10                 &kp F11           &kp F12  &kp F13     &kp F14     &kp F15  &none                                                        &none  &kp F16  &kp F17  &kp F18  &kp F19  &kp F20  &kp KP_NUMLOCK
+&kp F10                 &kp F11           &kp F12  &kp F13     &kp F14     &kp F15  &none                                                        &none  &kp F16  &kp F17  &kp F18  &kp F19  &kp F20  &kp KP_NUM
 &kp F20                 &kp F21           &kp F22  &kp F23     &kp F24     &none    &none            &none    &none                &none  &none  &none  &none    &none    &none    &none    &none    &kp SCROLLLOCK
 &kp LALT                &none             &none    &none       &none       &none                              &kp PRINTSCREEN      &none                &none    &none    &none    &none    &none    &kp RALT
 &none                   &kp C_PLAY_PAUSE  &none    &kp C_PREV  &kp C_NEXT           &kp LA(LC(TAB))  &kp DEL  &kp PAUSE_BREAK      &none  &none  &none           &none    &none    &none    &none    &none
