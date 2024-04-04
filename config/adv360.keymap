@@ -36,7 +36,6 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-
             hold-while-undecided;
         };
     };
@@ -58,11 +57,11 @@
 
         layer_m_flip {
             bindings = <
-&none           &kp N0    &kp N9    &kp N8     &kp N7  &kp N6  &trans                                             &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp MINUS       &kp P     &kp O     &kp I      &kp U   &kp Y   &kp F23                                            &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp SQT         &kp SEMI  &kp L     &kp K      &kp J   &kp H   &kp F24  &kp PG_DN  &kp PG_UP      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&mt RSHFT BSLH  &kp FSLH  &kp DOT   &kp COMMA  &kp M   &kp N                       &kp LGUI       &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&none           &kp RBKT  &kp LBKT  &kp DOWN   &kp UP          &trans   &none      &none          &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&none               &kp N0    &kp N9    &kp N8     &kp N7  &kp N6  &trans                                             &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp MINUS           &kp P     &kp O     &kp I      &kp U   &kp Y   &kp F23                                            &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp SQT             &kp SEMI  &kp L     &kp K      &kp J   &kp H   &kp F24  &kp PG_DN  &kp PG_UP      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&mt_hwu RSHFT BSLH  &kp FSLH  &kp DOT   &kp COMMA  &kp M   &kp N                       &kp LGUI       &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&none               &kp RBKT  &kp LBKT  &kp DOWN   &kp UP          &trans   &none      &none          &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
