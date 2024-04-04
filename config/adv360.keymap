@@ -42,7 +42,7 @@
 &kp EQUAL        &kp Q        &kp W        &kp E     &kp R      &kp T   &kp F21                                                            &kp F23    &kp Y   &kp U   &kp I      &kp O     &kp P     &kp MINUS
 &kp ESC          &kp A        &kp S        &kp D     &kp F      &kp G   &kp F22       &kp HOME   &kp END        &kp PG_UP   &kp PG_DN      &kp F24    &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
 &mt LSHFT GRAVE  &kp Z        &kp X        &kp C     &kp V      &kp B                            &kp LALT       &kp LGUI                              &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp BSLH
-&lt 5 QMARK      &lt 2 QMARK  &lt 3 QMARK  &kp LEFT  &kp RIGHT          &lt_hp 1 TAB  &kp SPACE  &kp LCTRL      &kp RSHIFT  &kp BACKSPACE  &kp ENTER          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &none
+&lt 4 QMARK      &lt 2 QMARK  &lt 3 QMARK  &kp LEFT  &kp RIGHT          &lt_hp 1 TAB  &kp SPACE  &kp LCTRL      &kp RSHIFT  &kp BACKSPACE  &kp ENTER          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &none
             >;
         };
 
