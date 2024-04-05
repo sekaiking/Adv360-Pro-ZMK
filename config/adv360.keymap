@@ -57,21 +57,21 @@
 
         layer_m_rhand {
             bindings = <
-&none      &kp N0    &kp N9   &kp N8     &kp N7     &kp N6  &none                                              &none  &none  &none     &none     &none     &none      &none
-&none      &kp P     &kp O    &kp I      &kp U      &kp Y   &kp F23                                            &none  &none  &kp LPAR  &kp RPAR  &none     &none      &none
-&kp SQT    &kp SEMI  &kp L    &kp K      &kp J      &kp H   &kp F24  &kp PG_DN  &kp PG_UP      &none  &none    &none  &none  &kp LEFT  &kp UP    &kp DOWN  &kp RIGHT  &none
-&kp RSHFT  &kp FSLH  &kp DOT  &kp COMMA  &kp M      &kp N                       &kp LGUI       &none                  &none  &kp LBRC  &kp RBRC  &kp LBKT  &kp RBKT   &none
-&none      &kp LEFT  &kp UP   &kp DOWN   &kp RIGHT          &trans   &none      &none          &none  &kp DEL  &none         &none     &none     &none     &none      &none
+&none      &kp N0    &kp N9   &kp N8     &kp N7     &kp N6  &none                                              &none  &none  &none     &none   &none     &none      &none
+&none      &kp P     &kp O    &kp I      &kp U      &kp Y   &kp F23                                            &none  &none  &none     &none   &none     &none      &none
+&kp SQT    &kp SEMI  &kp L    &kp K      &kp J      &kp H   &kp F24  &kp PG_DN  &kp PG_UP      &none  &none    &none  &none  &kp LEFT  &kp UP  &kp DOWN  &kp RIGHT  &none
+&kp RSHFT  &kp FSLH  &kp DOT  &kp COMMA  &kp M      &kp N                       &kp LGUI       &none                  &none  &kp AT    &none   &none     &none      &none
+&none      &kp LEFT  &kp UP   &kp DOWN   &kp RIGHT          &trans   &none      &none          &none  &kp DEL  &none         &none     &none   &none     &none      &none
             >;
         };
 
         layer_m_op {
             bindings = <
-&none  &none  &none       &none      &none      &none  &none                                          &none   &none  &none      &none         &none      &none  &none
-&none  &none  &kp TILDE   &kp PLUS   &kp ASTRK  &none  &none                                          &none   &none  &kp AMPS   &kp QUESTION  &kp AT     &none  &none
-&none  &none  &kp DOLLAR  &kp BSLH   &kp UNDER  &none  &none  &none      &none          &none  &none  &none   &none  &kp EQUAL  &kp EXCL      &kp GRAVE  &none  &none
-&none  &none  &none       &kp MINUS  &kp PIPE   &none                    &none          &none                 &none  &none      &kp COLON     &kp HASH   &none  &none
-&none  &none  &none       &none      &none             &none  &kp SPACE  &kp LCTRL      &none  &none  &trans         &none      &none         &none      &none  &none
+&none  &none  &none       &none      &none      &none        &none                                          &none   &none  &none      &none     &none     &none     &none
+&none  &none  &kp TILDE   &kp PLUS   &kp CARET  &none        &none                                          &none   &none  &kp AMPS   &kp LBKT  &kp RBKT  &none     &none
+&none  &none  &kp DOLLAR  &kp BSLH   &kp UNDER  &kp PIPE     &none  &none      &none          &none  &none  &none   &none  &kp EQUAL  &kp LPAR  &kp RPAR  &kp EXCL  &none
+&none  &none  &kp HASH    &kp MINUS  &kp ASTRK  &kp PERCENT                    &none          &none                 &none  &kp GRAVE  &kp LBRC  &kp RBRC  &none     &none
+&none  &none  &none       &none      &none                   &none  &kp SPACE  &kp LCTRL      &none  &none  &trans         &none      &none     &none     &none     &none
             >;
         };
 
