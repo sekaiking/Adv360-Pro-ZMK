@@ -58,20 +58,20 @@
         layer_m_rhand {
             bindings = <
 &none      &kp N0    &kp N9   &kp N8     &kp N7     &kp N6  &none                                              &none  &none      &none     &none     &none     &none      &none
-&none      &kp P     &kp O    &kp I      &kp U      &kp Y   &kp F23                                            &none  &none      &kp LBRC  &kp RBRC  &none     &none      &none
+&none      &kp P     &kp O    &kp I      &kp U      &kp Y   &kp F23                                            &none  &none      &kp LPAR  &kp RPAR  &none     &none      &none
 &kp SQT    &kp SEMI  &kp L    &kp K      &kp J      &kp H   &kp F24  &kp PG_DN  &kp PG_UP      &none  &none    &none  &kp UNDER  &kp LEFT  &kp UP    &kp DOWN  &kp RIGHT  &none
-&kp RSHFT  &kp FSLH  &kp DOT  &kp COMMA  &kp M      &kp N                       &kp LGUI       &none                  &none      &kp LPAR  &kp RPAR  &kp LBKT  &kp RBKT   &none
+&kp RSHFT  &kp FSLH  &kp DOT  &kp COMMA  &kp M      &kp N                       &kp LGUI       &none                  &none      &kp LBRC  &kp RBRC  &kp LBKT  &kp RBKT   &none
 &none      &kp LEFT  &kp UP   &kp DOWN   &kp RIGHT          &trans   &none      &none          &none  &kp DEL  &none             &none     &none     &none     &none      &none
             >;
         };
 
         layer_m_op {
             bindings = <
-&none  &none  &none     &none         &none      &none  &none                                      &none   &none  &none  &none  &none  &none  &none
-&none  &none  &none     &kp ASTERISK  &kp PLUS   &none  &none                                      &none   &none  &none  &none  &none  &none  &none
-&none  &none  &kp PIPE  &kp BSLH      &kp EQUAL  &none  &none  &none      &none      &none  &none  &none   &none  &none  &none  &none  &none  &none
-&none  &none  &none     &kp SLASH     &kp MINUS  &none                    &none      &none                 &none  &none  &none  &none  &none  &none
-&none  &none  &none     &none         &none             &none  &kp SPACE  &none      &none  &none  &trans         &none  &none  &none  &none  &none
+&none  &none  &none      &none         &none      &none  &none                                      &none   &none  &none  &none  &none  &none  &none
+&none  &none  &kp TILDE  &kp ASTERISK  &kp PLUS   &none  &none                                      &none   &none  &none  &none  &none  &none  &none
+&none  &none  &kp PIPE   &kp BSLH      &kp EQUAL  &none  &none  &none      &none      &none  &none  &none   &none  &none  &none  &none  &none  &none
+&none  &none  &kp GRAVE  &kp SLASH     &kp MINUS  &none                    &none      &none                 &none  &none  &none  &none  &none  &none
+&none  &none  &none      &none         &none             &none  &kp SPACE  &none      &none  &none  &trans         &none  &none  &none  &none  &none
             >;
         };
 
