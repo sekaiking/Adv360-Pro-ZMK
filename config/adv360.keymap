@@ -47,25 +47,35 @@
 
         layer_base {
             bindings = <
-&none        &kp N1       &kp N2       &kp N3  &kp N4  &kp N5  &kp F20                                                            &none           &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &none
-&none        &kp Q        &kp W        &kp E   &kp R   &kp T   &kp F21                                                            &kp F23         &kp Y   &kp U   &kp I      &kp O     &kp P     &none
-&kp ESC      &kp A        &kp S        &kp D   &kp F   &kp G   &kp F22       &kp HOME   &kp END        &kp PG_UP   &kp PG_DN      &kp F24         &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHIFT   &kp Z        &kp X        &kp C   &kp V   &kp B                            &kp LALT       &kp LGUI                                   &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &none
-&lt 5 QMARK  &lt 3 QMARK  &lt 4 QMARK  &none   &none           &lt_hp 1 TAB  &kp SPACE  &kp LCTRL      &kp LSHIFT  &kp BACKSPACE  &lt_hp 2 ENTER          &none   &kp LBRC   &kp RBRC  &none     &none
+&kp F15    &kp N1     &kp N2     &kp N3   &kp N4   &kp N5  &kp F22                                                            &none           &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &none
+&kp F16    &kp Q      &kp W      &kp E    &kp R    &kp T   &kp F23                                                            &none           &kp Y   &kp U   &kp I      &kp O     &kp P     &none
+&kp ESC    &kp A      &kp S      &kp D    &kp F    &kp G   &kp F24       &kp HOME   &kp END        &kp PG_UP   &kp PG_DN      &none           &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z      &kp X      &kp C    &kp V    &kp B                            &kp LALT       &kp LGUI                                   &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &none
+&lt 6 F17  &lt 4 F18  &lt 5 F19  &kp F20  &kp F21          &lt_hp 2 TAB  &kp SPACE  &kp LCTRL      &kp LSHIFT  &kp BACKSPACE  &lt_hp 3 ENTER          &none   &kp LBRC   &kp RBRC  &none     &none
             >;
         };
 
-        layer_m_rhand {
+        layer_o_fastmode {
             bindings = <
-&none      &kp N0    &kp N9   &kp N8     &kp N7     &kp N6  &none                                              &none  &none  &none     &none   &none     &none      &none
-&none      &kp P     &kp O    &kp I      &kp U      &kp Y   &kp F23                                            &none  &none  &none     &none   &none     &none      &none
-&kp SQT    &kp SEMI  &kp L    &kp K      &kp J      &kp H   &kp F24  &kp PG_DN  &kp PG_UP      &none  &none    &none  &none  &kp LEFT  &kp UP  &kp DOWN  &kp RIGHT  &none
-&kp RSHFT  &kp FSLH  &kp DOT  &kp COMMA  &kp M      &kp N                       &kp LGUI       &none                  &none  &kp AT    &none   &none     &none      &none
-&none      &kp LEFT  &kp UP   &kp DOWN   &kp RIGHT          &trans   &none      &none          &none  &kp DEL  &none         &none     &none   &none     &none      &none
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                       &trans     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                       &trans     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans  &trans      &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                   &trans      &trans                     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &kp TAB  &trans  &trans      &trans  &trans  &kp ENTER          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
-        layer_m_op {
+        layer_m_lthumb {
+            bindings = <
+&none    &kp N0    &kp N9   &kp N8     &kp N7     &kp N6  &none                                               &none  &none   &none     &none   &none     &none      &none
+&none    &kp P     &kp O    &kp I      &kp U      &kp Y   &kp F23                                             &none  &none   &none     &none   &none     &none      &none
+&kp SQT  &kp SEMI  &kp L    &kp K      &kp J      &kp H   &kp F24  &kp PG_DN  &kp PG_UP       &none  &none    &none  &kp AT  &kp LEFT  &kp UP  &kp DOWN  &kp RIGHT  &none
+&none    &kp FSLH  &kp DOT  &kp COMMA  &kp M      &kp N                       &kp LGUI        &none                  &none   &none     &none   &none     &none      &none
+&none    &kp LEFT  &kp UP   &kp DOWN   &kp RIGHT          &trans   &none      &kp LSHIFT      &none  &kp DEL  &none          &none     &none   &none     &none      &none
+            >;
+        };
+
+        layer_m_rthumb {
             bindings = <
 &none  &none        &none       &none      &none      &none  &none                                          &none   &none  &none      &none     &none      &none      &none
 &none  &none        &kp TILDE   &kp PLUS   &kp CARET  &none  &none                                          &none   &none  &kp AMPS   &kp LBKT  &kp RBKT   &none      &none
@@ -97,11 +107,11 @@
 
         layer_m_fn {
             bindings = <
-&rgb_ug RGB_MEFS_CMD 5  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &none                                                       &none     &kp F6   &kp F7   &kp F8   &kp F9   &kp F10  &kp CAPSLOCK
-&kp F10                 &kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &none                                                       &none     &kp F16  &kp F17  &kp F18  &kp F19  &kp F20  &kp KP_NUM
-&kp F20                 &kp F21  &kp F22  &kp F23  &kp F24  &none    &none     &kp INS    &tog 6               &none  &none      &none     &none    &none    &none    &none    &none    &kp SCROLLLOCK
-&kp LSHFT               &none    &none    &none    &none    &none                         &none                &none                       &none    &none    &none    &none    &none    &kp RSHFT
-&trans                  &none    &none    &none    &none             &kp LALT  &kp LCTRL  &kp PAUSE_BREAK      &none  &kp RCTRL  &kp RALT           &none    &none    &none    &none    &sk SYSREQ
+&rgb_ug RGB_MEFS_CMD 5  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &none                                                        &none     &kp F6   &kp F7   &kp F8   &kp F9   &kp F10  &kp CAPSLOCK
+&kp F10                 &kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &none                                                        &none     &kp F16  &kp F17  &kp F18  &kp F19  &kp F20  &kp KP_NUM
+&kp F20                 &kp F21  &kp F22  &kp F23  &kp F24  &none    &none     &kp INS    &tog 7               &tog 1  &none      &none     &none    &none    &none    &none    &none    &kp SCROLLLOCK
+&kp LSHFT               &none    &none    &none    &none    &none                         &none                &none                        &none    &none    &none    &none    &none    &kp RSHFT
+&trans                  &none    &none    &none    &none             &kp LALT  &kp LCTRL  &kp PAUSE_BREAK      &none   &kp RCTRL  &kp RALT           &none    &none    &none    &none    &sk SYSREQ
             >;
         };
 
@@ -111,7 +121,7 @@
 &none                   &none         &none         &none         &none         &none         &none                                                  &none            &none       &none       &none       &none  &none  &none
 &none                   &none         &none         &none         &none         &sys_reset    &bootloader  &none  &none      &bt BT_CLR  &none       &bootloader      &sys_reset  &none       &none       &none  &none  &none
 &none                   &none         &none         &none         &none         &none                             &none      &none                                    &none       &none       &none       &none  &none  &none
-&tog 6                  &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG              &bl BL_INC  &bl BL_DEC  &none  &none  &tog 6
+&tog 7                  &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG              &bl BL_INC  &bl BL_DEC  &none  &none  &tog 7
             >;
         };
     };
