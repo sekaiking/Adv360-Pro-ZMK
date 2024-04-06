@@ -79,9 +79,9 @@
         layer_m_rthumb {
             bindings = <
 &none  &none        &none       &none      &none      &none  &none                                          &none   &none  &none      &none     &none      &none      &none
-&none  &kp AMPS     &kp TILDE   &kp PLUS   &kp CARET  &none  &none                                          &none   &none  &kp GRAVE  &kp LBKT  &kp RBKT   &none      &none
+&none  &none        &kp TILDE   &kp PLUS   &kp CARET  &none  &none                                          &none   &none  &kp GRAVE  &kp LBKT  &kp RBKT   &none      &none
 &none  &kp PIPE     &kp DOLLAR  &kp BSLH   &kp UNDER  &none  &none  &none      &none          &none  &none  &none   &none  &kp EQUAL  &kp LPAR  &kp RPAR   &kp EXCL   &none
-&none  &kp PERCENT  &kp HASH    &kp MINUS  &kp ASTRK  &none                    &none          &none                 &none  &none      &none     &kp COLON  &kp QMARK  &none
+&none  &kp PERCENT  &kp HASH    &kp MINUS  &kp ASTRK  &none                    &none          &none                 &none  &kp AMPS   &none     &kp COLON  &kp QMARK  &none
 &none  &none        &none       &none      &none             &none  &kp SPACE  &kp LCTRL      &none  &none  &trans         &none      &none     &none      &none      &none
             >;
         };
