@@ -48,11 +48,11 @@
 
         layer_base {
             bindings = <
-&kp F15    &kp N1    &kp N2     &kp N3   &kp N4   &kp N5  &kp F22                                                            &none           &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &none
-&kp F16    &kp Q     &kp W      &kp E    &kp R    &kp T   &kp F23                                                            &none           &kp Y   &kp U   &kp I      &kp O     &kp P     &none
-&kp ESC    &kp A     &kp S      &kp D    &kp F    &kp G   &kp F24       &kp HOME   &kp END        &kp PG_UP   &kp PG_DN      &none           &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z     &kp X      &kp C    &kp V    &kp B                            &kp LALT       &kp LGUI                                   &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &none
-&lt 6 F17  &lt 4 F7  &lt 5 F19  &kp F20  &kp F21          &lt_hp 2 TAB  &kp SPACE  &kp LCTRL      &kp LSHIFT  &kp BACKSPACE  &lt_hp 3 ENTER          &none   &kp LBRC   &kp RBRC  &none     &none
+&kp F15    &kp N1     &kp N2     &kp N3   &kp N4   &kp N5  &kp F22                                                            &none           &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &none
+&kp F16    &kp Q      &kp W      &kp E    &kp R    &kp T   &kp F23                                                            &none           &kp Y   &kp U   &kp I      &kp O     &kp P     &none
+&kp ESC    &kp A      &kp S      &kp D    &kp F    &kp G   &kp F24       &kp HOME   &kp END        &kp PG_UP   &kp PG_DN      &none           &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z      &kp X      &kp C    &kp V    &kp B                            &kp LALT       &kp LGUI                                   &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &none
+&lt 6 F17  &lt 4 F18  &lt 5 F19  &kp F20  &kp F21          &lt_hp 2 TAB  &kp SPACE  &kp LCTRL      &kp LSHIFT  &kp BACKSPACE  &lt_hp 3 ENTER          &none   &kp LBRC   &kp RBRC  &none     &none
             >;
         };
 
@@ -68,11 +68,11 @@
 
         layer_m_lthumb {
             bindings = <
-&none    &kp N0    &kp N9   &kp N8     &kp N7     &kp N6  &none                                               &none  &none   &none     &none   &none     &none      &none
-&none    &kp P     &kp O    &kp I      &kp U      &kp Y   &kp F23                                             &none  &none   &none     &none   &none     &none      &none
-&kp SQT  &kp SEMI  &kp L    &kp K      &kp J      &kp H   &kp F24  &kp PG_DN  &kp PG_UP       &none  &none    &none  &kp AT  &kp LEFT  &kp UP  &kp DOWN  &kp RIGHT  &none
-&none    &kp FSLH  &kp DOT  &kp COMMA  &kp M      &kp N                       &kp LGUI        &none                  &none   &none     &none   &none     &none      &none
-&none    &kp LEFT  &kp UP   &kp DOWN   &kp RIGHT          &trans   &none      &kp LSHIFT      &none  &kp DEL  &none          &none     &none   &none     &none      &none
+&none    &kp N0    &kp N9   &kp N8     &kp N7     &kp N6  &none                                              &none  &none   &none     &none   &none     &none      &none
+&none    &kp P     &kp O    &kp I      &kp U      &kp Y   &none                                              &none  &none   &none     &none   &none     &none      &none
+&kp SQT  &kp SEMI  &kp L    &kp K      &kp J      &kp H   &none   &kp PG_DN  &kp PG_UP       &none  &none    &none  &kp AT  &kp LEFT  &kp UP  &kp DOWN  &kp RIGHT  &none
+&none    &kp FSLH  &kp DOT  &kp COMMA  &kp M      &kp N                      &kp LGUI        &none                  &none   &none     &none   &none     &none      &none
+&none    &kp LEFT  &kp UP   &kp DOWN   &kp RIGHT          &trans  &none      &kp LSHIFT      &none  &kp DEL  &none          &none     &none   &none     &none      &none
             >;
         };
 
