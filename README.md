@@ -115,7 +115,7 @@ The color of the CAPS/NUM/SCROLL LOCK indicator LEDs may be configured by specif
 
 ## Layer colors
 
-A total of 32 layers are supported; the highest currently active layer is displayed using the layer LEDs on each of the left and right modules. All possible colors are listed below; for the first 8 layers the same color is displayed on both modules. After that, only the right module color will cycle through until "rolling over", which will cause the left module color to change as well (and this then repeats). To avoid confusion, the black/off LED color is only used for layer 0.
+A total of 32 layers are supported by ZMK, with the highest currently active layer displayed using the layer LEDs on each of the left and right modules. All possible colors are listed below; for the first 8 layers the same color is displayed on both modules. After that, only the right module color will cycle through until "rolling over", which will cause the left module color to change as well (and this then repeats). To avoid confusion, the black/off LED color is only used for layer 0.
 
 | Layer # | L/R | Layer # | L/R | Layer # | L/R | Layer # | L/R |
 | ---: | :---: | ---: | :---: | ---: | :---: | ---: | :---: |
