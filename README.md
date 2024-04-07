@@ -109,7 +109,9 @@ By default this keyboard has NKRO enabled, however for compatibility reasons the
 
 By default reporting the battery level over BLE is disabled as this can cause some computers to spontaneously wake up repeatedly. If you'd like to enable this functionality change `CONFIG_BT_BAS=n` to  `CONFIG_BT_BAS=y` in [adv360_left_defconfig](/config/boards/arm/adv360/adv360_left_defconfig#L58). Please note that a known bug in windows prevents the battery level from updating by default, it is only updated when the board is paired. A workaround is to set `CONFIG_BT_GATT_ENFORCE_SUBSCRIPTION=n` in [adv360_left_defconfig](/config/boards/arm/adv360/adv360_left_defconfig). This may cause unexpected results on other OSes.
 
-## Layer colors 
+## Layer colors
+
+A total of 32 layers are supported; the highest currently active layer is displayed using the layer LEDs on each of the left and right modules. All possible colors are listed below; for the first 8 layers the same color is displayed on both modules. After that, only the right module color will cycle through until "rolling over", which will cause the left module color to change as well (and this then repeats). To avoid confusion, the black/off LED color is only used for layer 0.
 
 | Layer # | L/R | Layer # | L/R | Layer # | L/R | Layer # | L/R |
 | ---: | :---: | ---: | :---: | ---: | :---: | ---: | :---: |
