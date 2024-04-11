@@ -9,7 +9,7 @@ manifest:
   projects:
     - name: zmk
       remote: khoek
-      revision: main
+      revision: test
       import: app/west.yml
   self:
     path: config
