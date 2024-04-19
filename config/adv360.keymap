@@ -10,9 +10,11 @@
 
 #define QWERTY 0
 #define DVORAK 1
-#define KEYPAD 2
-#define FN 3
-#define MOD 4
+#define QWERTYP 2
+#define DVORAKP 3
+#define KEYPAD 4
+#define FN 5
+#define MOD 6
 
 
 / {
@@ -211,13 +213,33 @@
             >;
         };
 
+        dvorak {
+            bindings = <
+                ______  ______        ______        ______         ______         ______        ______                                      ______  ______   ______         ______         ______        ______        ______
+                ______  &kp SQT       &kp COMMA     &kp DOT        &kp P          &kp Y         ______                                      ______  &kp F    &kp G          &kp C          &kp R         &kp L         &kp FSLH
+                ______  &hm_l LGUI A  &hm_l LALT O  &hm_l LCTRL E  &hm_l LSHFT U  &lt KEYPAD I  ______  ______  ______      ______  ______  ______  &kp D    &hm_r RSHFT H  &hm_r RCTRL T  &hm_r RALT N  &hm_r RGUI S  &kp BSLH
+                ______  &kp SEMI      &kp Q         &kp J          &kp K          &kp X                         ______      ______                  &kp B    &kp M          &kp W          &kp V         &kp Z         ______
+                ______  ______        ______        ______         ______                       ______  ______  ______      ______  ______  ______           ______         ______         ______        ______        ______
+            >;
+        };
+
+        querty_prog_prime {
+            bindings = <
+                &pgrave  &pkp_n1       &lkp_n2       &lkp_n3        &lkp_n4        &akp_n5       ______                                      ______  &ekp_n6  &rkp_n7        &rkp_n8        &rkp_n9       &skp_n0          &eprcnt
+                ______   &kp Q         &kp W         &kp E          &kp R          &kp T         ______                                      ______  &kp Y    &kp U          &kp I          &kp O         &kp P            &bhash
+                ______   &hm_l LGUI A  &hm_l LALT S  &hm_l LCTRL D  &hm_l LSHFT F  &lt KEYPAD G  ______  ______  ______      ______  ______  ______  &kp H    &hm_r RSHFT J  &hm_r RCTRL K  &hm_r RALT L  &hm_r RGUI SEMI  &kp MINUS
+                ______   &kp Z         &kp X         &kp C          &kp V          &kp B                         ______      ______                  &kp N    &kp M          &kp COMMA      &kp DOT       &kp SQT          ______
+                ______   &dtilde       ______        ______         ______                       ______  ______  ______      ______  ______  ______           ______         ______         &kp FSLH      &acaret          ______
+            >;
+        };
+
         dvorak_prog_prime {
             bindings = <
-                &pgrave  &pkp_n1       &lkp_n2       &lkp_n3        &lkp_n4        &akp_n5       ______                                      ______  &ekp_n6  &rkp_n7        &rkp_n8        &rkp_n9       &skp_n0       &eprcnt
-                ______   &kp SEMI      &kp COMMA     &kp DOT        &kp P          &kp Y         ______                                      ______  &kp F    &kp G          &kp C          &kp R         &kp L         &bhash
-                ______   &hm_l LGUI A  &hm_l LALT O  &hm_l LCTRL E  &hm_l LSHFT U  &lt KEYPAD I  ______  ______  ______      ______  ______  ______  &kp D    &hm_r RSHFT H  &hm_r RCTRL T  &hm_r RALT N  &hm_r RGUI S  &kp MINUS
-                ______   &kp APOS      &kp Q         &kp J          &kp K          &kp X                         ______      ______                  &kp B    &kp M          &kp W          &kp V         &kp Z         ______
-                ______   &dtilde       ______        ______         ______                       ______  ______  ______      ______  ______  ______           ______         ______         &kp FSLH      &acaret       ______
+                ______  ______        ______        ______         ______         ______        ______                                      ______  ______   ______         ______         ______        ______        ______
+                ______  &kp SQT       &kp COMMA     &kp DOT        &kp P          &kp Y         ______                                      ______  &kp F    &kp G          &kp C          &kp R         &kp L         ______
+                ______  &hm_l LGUI A  &hm_l LALT O  &hm_l LCTRL E  &hm_l LSHFT U  &lt KEYPAD I  ______  ______  ______      ______  ______  ______  &kp D    &hm_r RSHFT H  &hm_r RCTRL T  &hm_r RALT N  &hm_r RGUI S  ______
+                ______  &kp SEMI      &kp Q         &kp J          &kp K          &kp X                         ______      ______                  &kp B    &kp M          &kp W          &kp V         &kp Z         ______
+                ______  ______        ______        ______         ______                       ______  ______  ______      ______  ______  ______           ______         ______         ______        ______        ______
             >;
         };
 
@@ -233,11 +255,11 @@
 
         fn {
             bindings = <
-                &kp F1  &kp F2  &kp F3     &kp F4  &kp F5  &kp F6  ______                                      ______  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-                ______  ______  ______     ______  ______  ______  xxxxxx                                      xxxxxx  ______  ______  ______  ______   ______   ______
-                ______  ______  ______     ______  ______  ______  xxxxxx  ______  ______      ______  ______  xxxxxx  ______  ______  ______  ______   ______   ______
-                ______  ______  ______     ______  ______  ______                  ______      ______                  ______  ______  ______  ______   ______   ______
-                ______  ______  &kp K_APP  ______  ______          ______  ______  ______      ______  ______  ______          ______  ______  ______   ______   ______
+                &kp F1  &kp F2  &kp F3     &kp F4  &kp F5  &kp F6  ______                                           ______  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+                ______  ______  ______     ______  ______  ______  &to QWERTYP                                      xxxxxx  ______  ______  ______  ______   ______   ______
+                ______  ______  ______     ______  ______  ______  &to DVORAKP  ______  ______      ______  ______  xxxxxx  ______  ______  ______  ______   ______   ______
+                ______  ______  ______     ______  ______  ______                       ______      ______                  ______  ______  ______  ______   ______   ______
+                ______  ______  &kp K_APP  ______  ______          ______       ______  ______      ______  ______  ______          ______  ______  ______   ______   ______
             >;
         };
 
