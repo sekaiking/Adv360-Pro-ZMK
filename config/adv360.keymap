@@ -4,18 +4,35 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/backlight.h>
 
+
+#define DEFAULT 0
+#define KP   1
+#define FN   2
+#define MOD   3
+#define QWERTY   4
+#define SHIFT_LAYER   5
+#define SYMBOL_LAYER   6
+#define GAME_LAYER   7
+#define CODE   8
+
+
+
 / {
+    // combos {
+    //     compatible = "zmk,combos";
+    //     // combo_save {
+    //     //     timeout-ms = <50>;
+    //     //     key-positions = <31 32>;
+    //     //     bindings = <&kp LG(S)>;
+    //     // };
+    //     combo_enter {
+    //         timeout-ms = <50>;
+    //         key-positions = <41 42>;
+    //         bindings = <&kp ENTER>;
+    //     };
+    // };
     behaviors {
       #include "macros.dtsi"
-      #include "version.dtsi"
-      #ifndef VERSION_MACRO
-      macro_ver: macro_ver {
-        compatible = "zmk,behavior-macro";
-        label = "macro_version";
-        #binding-cells = <0>;
-        bindings = <&kp RET>;
-      };
-      #endif
 
       hm: homerow_mods {
           compatible = "zmk,behavior-hold-tap";
@@ -26,8 +43,129 @@
           flavor = "tap-preferred";
           bindings = <&kp>, <&kp>;
       };
-    };
+      mo_tog: behavior_mo_tog {
+          compatible = "zmk,behavior-hold-tap";
+          label = "mo_tog";
+          #binding-cells = <2>;
+          flavor = "hold-preferred";
+          tapping-term-ms = <200>;
+          bindings = <&mo>, <&tog>;
+      };
+      bspc_del: backspace_delete {
+          compatible = "zmk,behavior-mod-morph";
+          label = "BACKSPACE_DELETE";
+          #binding-cells = <0>;
+          bindings = <&kp BACKSPACE>, <&kp DELETE>;
+          mods = <(MOD_LSFT|MOD_RSFT)>;
+          keep-mods = <(MOD_RSFT)>;
+      };
+      td_cp: tap_dance_cp {
+          compatible = "zmk,behavior-tap-dance";
+          label = "TAP_DANCE_CP";
+          #binding-cells = <0>;
+          tapping-term-ms = <300>;
+          bindings = <&kp LG(V)>, <&kp LG(C)>;
+      };
+      td_cap: tap_dance_cap {
+          compatible = "zmk,behavior-tap-dance";
+          label = "TAP_DANCE_CAP";
+          #binding-cells = <0>;
+          tapping-term-ms = <200>;
+          bindings = <&mo SHIFT_LAYER>, <&caps_word>, <&kp CAPSLOCK>;
+      };
+      td_kp: tap_dance_kp {
+          compatible = "zmk,behavior-tap-dance";
+          label = "TAP_DANCE_KP";
+          #binding-cells = <0>;
+          tapping-term-ms = <200>;
+          bindings = <&mo KP>, <&tog KP>;
+      };
+      td_s_par: tap_dance_s_par {
+          compatible = "zmk,behavior-tap-dance";
+          label = "TAP_DANCE_S_PAR";
+          #binding-cells = <0>;
+          tapping-term-ms = <200>;
+          bindings = <&kp LPAR>, <&kp RPAR>;
+      };
+      td_m_par: tap_dance_m_par {
+          compatible = "zmk,behavior-tap-dance";
+          label = "TAP_DANCE_M_PAR";
+          #binding-cells = <0>;
+          tapping-term-ms = <200>;
+          bindings = <&kp LEFT_BRACKET>, <&kp RIGHT_BRACKET>;
+      };
+      td_l_par: tap_dance_l_par {
+          compatible = "zmk,behavior-tap-dance";
+          label = "TAP_DANCE_L_PAR";
+          #binding-cells = <0>;
+          tapping-term-ms = <200>;
+          bindings = <&kp LS(LEFT_BRACKET)>, <&kp LS(RIGHT_BRACKET)>;
+      };
+      gresc: grave_escape {
+          compatible = "zmk,behavior-mod-morph";
+          label = "GRAVE_ESCAPE";
+          #binding-cells = <0>;
+          bindings = <&kp ESC>, <&kp GRAVE>;
+          mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+      one: one {
+          compatible = "zmk,behavior-mod-morph";
+          label = "one_lt";
+          #binding-cells = <0>;
+          bindings = <&kp N1>, <&kp LESS_THAN>;
+          mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+      two: two {
+          compatible = "zmk,behavior-mod-morph";
+          label = "two_gt";
+          #binding-cells = <0>;
+          bindings = <&kp N2>, <&kp GREATER_THAN>;
+          mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+      three: three {
+          compatible = "zmk,behavior-mod-morph";
+          label = "three_question";
+          #binding-cells = <0>;
+          bindings = <&kp N3>, <&kp QUESTION>;
+          mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+      comma_exclamation: comma_exclamation {
+          compatible = "zmk,behavior-mod-morph";
+          label = "comma_exclamation";
+          #binding-cells = <0>;
+          bindings = <&kp COMMA>, <&kp EXCLAMATION>;
+          mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+      dot_equal: dot_equal {
+          compatible = "zmk,behavior-mod-morph";
+          label = "dot_equal";
+          #binding-cells = <0>;
+          bindings = <&kp DOT>, <&kp KP_EQUAL>;
+          mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+      colon_backslash: colon_backslash {
+          compatible = "zmk,behavior-mod-morph";
+          label = "colon_backslash";
+          #binding-cells = <0>;
+          bindings = <&kp COLON>, <&kp BACKSLASH>;
+          mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+      left_home: left_home {
+          compatible = "zmk,behavior-mod-morph";
+          label = "left_home";
+          #binding-cells = <0>;
+          bindings = <&kp LEFT>, <&kp HOME>;
+          mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+      right_end: right_end {
+          compatible = "zmk,behavior-mod-morph";
+          label = "right_end";
+          #binding-cells = <0>;
+          bindings = <&kp RIGHT>, <&kp END>;
+          mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
 
+    };
 
   keymap {
     compatible = "zmk,keymap";
