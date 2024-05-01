@@ -10,12 +10,6 @@
     #binding-cells = <0>;
     bindings = <&kp DQT>, <&kp DQT>, <&kp LEFT>;
   };
-  macro_braces: macro_braces {
-    compatible = "zmk,behavior-macro";
-    label = "macro_braces";
-    #binding-cells = <0>;
-    bindings = <&kp LBRC>, <&kp RBRC>, <&kp LEFT>;
-  };
   macro_parens: macro_parens {
     compatible = "zmk,behavior-macro";
     label = "macro_parens";
@@ -28,9 +22,113 @@
     #binding-cells = <0>;
     bindings = <&kp LBKT>, <&kp RBKT>, <&kp LEFT>;
   };
+  macro_lbrackets: macro_lbrackets {
+    compatible = "zmk,behavior-macro";
+    label = "macro_lbrackets";
+    #binding-cells = <0>;
+    bindings = <&kp LS(LBKT)>, <&kp LS(RBKT)>, <&kp LEFT>;
+  };
   macro_kinesis: macro_kinesis {
     compatible = "zmk,behavior-macro";
     label = "macro_kinesis";
     #binding-cells = <0>;
     bindings = <&kp LS(K)>, <&kp I>, <&kp N>, <&kp E>, <&kp S>, <&kp I>, <&kp S>;
+  };
+  macro_gmail: macro_gmail {
+    compatible = "zmk,behavior-macro";
+    label = "macro_gmail";
+    #binding-cells = <0>; 
+    wait-ms = <15>;
+    tap-ms = <10>;
+    bindings = <&kp R &kp A &kp N &kp R &kp A &kp N &kp H &kp A &kp O &kp R &kp A &kp N &kp Z &kp H &kp A &kp N &kp G>, <&kp AT>, <&kp G>, <&kp M>, <&kp A>, <&kp I>, <&kp L>, <&kp DOT>, <&kp C>, <&kp O>, <&kp M>;
+  };
+  macro_psu: macro_psu {
+    compatible = "zmk,behavior-macro";
+    label = "macro_psu";
+    #binding-cells = <0>;
+    wait-ms = <15>;
+    tap-ms = <10>;
+    bindings = <&kp H &kp Z &kp Z &kp N5 &kp N3 &kp N6 &kp N1>
+    , <&kp AT>, <&kp P>, <&kp S>
+    , <&kp U>, <&kp DOT>, <&kp E>, <&kp D>, <&kp U>;
+  };
+  macro_select_word: select_word {
+    compatible = "zmk,behavior-macro";
+    label = "macro_select_word";
+    #binding-cells = <0>;
+    wait-ms = <15>;
+    tap-ms = <40>;
+    bindings = <&kp LA(LEFT)>, <&kp LA(LS(RIGHT))>;
+  };
+  macro_select_line: select_line {
+    compatible = "zmk,behavior-macro";
+    label = "macro_select_line";
+    #binding-cells = <0>;
+    wait-ms = <15>;
+    tap-ms = <40>;
+    bindings = <&kp LG(LEFT)>, <&kp LG(LS(RIGHT))>;
+  };
+  macro_undir: macro_undir {
+    compatible = "zmk,behavior-macro";
+    label = "macro_undir";
+    #binding-cells = <0>;
+    wait-ms = <15>;
+    tap-ms = <40>;
+    bindings = <&kp DOT &kp DOT &kp SLASH>;
+  };
+  macro_main: macro_main {
+    compatible = "zmk,behavior-macro";
+    label = "macro_main";
+    #binding-cells = <0>;
+    wait-ms = <15>;
+    tap-ms = <10>;
+    bindings = <&kp I &kp F &kp SPACE &kp UNDER &kp UNDER &kp N &kp A &kp M &kp E &kp UNDER &kp UNDER &kp SPACE &kp EQUAL &kp EQUAL &kp SPACE &kp DQT &kp UNDER &kp UNDER &kp M &kp A &kp I &kp N &kp UNDER &kp UNDER &kp DQT &kp COLON &kp ENTER>;
+  };
+  macro_def: macro_def {
+    compatible = "zmk,behavior-macro";
+    label = "macro_def";
+    #binding-cells = <0>;
+    wait-ms = <15>;
+    tap-ms = <10>;
+    bindings = <&kp D &kp E &kp F &kp SPACE>;
+  };
+  macro_class: macro_class {
+    compatible = "zmk,behavior-macro";
+    label = "macro_class";
+    #binding-cells = <0>;
+    wait-ms = <15>;
+    tap-ms = <10>;
+    bindings = <&kp C &kp L &kp A &kp S &kp S &kp SPACE>;
+  };
+  macro_cancel_hints: macro_cancel_hints {
+    compatible = "zmk,behavior-macro";
+    label = "macro_cancel_hints";
+    #binding-cells = <0>;
+    wait-ms = <5>;
+    tap-ms = <5>;
+    bindings = <&kp LEFT &kp RIGHT>;
+  };
+  vscode_terminal: vscode_terminal {
+    compatible = "zmk,behavior-macro";
+    label = "vscode_terminal";
+    #binding-cells = <0>;
+    wait-ms = <5>;
+    tap-ms = <5>;
+    bindings = <&kp LC(GRAVE)>;
+  };
+  vscode_win1: vscode_win1 {
+    compatible = "zmk,behavior-macro";
+    label = "vscode_win1";
+    #binding-cells = <0>;
+    wait-ms = <5>;
+    tap-ms = <5>;
+    bindings = <&kp LG(N1)>;
+  };
+  vscode_win2: vscode_win2 {
+    compatible = "zmk,behavior-macro";
+    label = "vscode_win2";
+    #binding-cells = <0>;
+    wait-ms = <5>;
+    tap-ms = <5>;
+    bindings = <&kp LG(N2)>;
   };
