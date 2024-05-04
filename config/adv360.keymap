@@ -80,10 +80,20 @@
 
         layer_Dvorak {
             bindings = <
+ &trans    &trans     &trans   &trans  &trans  &trans            &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans   &kp SQT  &kp COMMA  &kp DOT   &kp P   &kp Y            &trans                                                  &trans   &kp F   &kp G   &kp C   &kp R   &kp L  &trans
+ &trans     &kp A      &kp O    &kp E   &kp U   &kp I            &trans  &trans  &trans                  &trans  &trans  &trans   &kp D   &kp H   &kp T   &kp N   &kp S  &trans
+ &trans  &kp SEMI      &kp Q    &kp J   &kp K   &kp X                            &trans                  &trans                   &kp B   &kp M   &kp W   &kp V   &kp Z  &trans
+ &trans    &trans     &trans   &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_Programmer_ {
+            bindings = <
  &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans   &none   &none   &none   &kp P   &kp Y            &trans                                                  &trans   &kp F   &kp G   &kp C   &kp R   &kp L  &trans
- &trans   &kp A   &kp O   &kp E   &kp U   &kp I            &trans  &trans  &trans                  &trans  &trans  &trans   &kp D   &kp H   &kp T   &kp N   &kp S  &trans
- &trans   &none   &kp Q   &kp J   &kp K   &kp X                            &trans                  &trans                   &kp B   &kp M   &kp W   &kp V   &kp Z  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                            &trans                  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
