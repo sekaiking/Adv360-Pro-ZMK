@@ -92,11 +92,11 @@
 
         layer_m_rthumb {
             bindings = <
-&none  &none        &none       &none      &none      &none  &none                                          &none   &none  &none      &none     &none     &none      &none
-&none  &none        &kp TILDE   &kp PLUS   &kp CARET  &none  &none                                          &none   &none  &kp GRAVE  &kp LBKT  &kp RBKT  &none      &none
-&none  &kp PIPE     &kp DOLLAR  &kp BSLH   &kp UNDER  &none  &none  &none      &none          &none  &none  &none   &none  &kp EQUAL  &kp LPAR  &kp RPAR  &kp COLON  &none
-&none  &kp PERCENT  &kp HASH    &kp MINUS  &kp ASTRK  &none                    &none          &none                 &none  &kp AMPS   &kp AT    &kp EXCL  &kp QMARK  &none
-&none  &none        &none       &none      &none             &none  &kp SPACE  &kp LCTRL      &none  &none  &trans         &none      &none     &none     &none      &none
+&none  &none        &none       &none      &none      &none  &none                                          &none   &none  &none      &none     &none     &none     &none
+&none  &none        &kp TILDE   &kp PLUS   &kp CARET  &none  &none                                          &none   &none  &kp GRAVE  &kp LBKT  &kp RBKT  &none     &none
+&none  &kp PIPE     &kp DOLLAR  &kp BSLH   &kp UNDER  &none  &none  &none      &none          &none  &none  &none   &none  &kp EQUAL  &kp LPAR  &kp RPAR  &kp EXCL  &none
+&none  &kp PERCENT  &kp HASH    &kp MINUS  &kp ASTRK  &none                    &none          &none                 &none  &kp AMPS   &kp LBRC  &kp RBRC  &kp AT    &none
+&none  &none        &none       &none      &none             &none  &kp SPACE  &kp LCTRL      &none  &none  &trans         &none      &none     &none     &none     &none
             >;
         };
 
