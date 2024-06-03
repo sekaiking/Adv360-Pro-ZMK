@@ -83,9 +83,9 @@
         layer_m_lthumb {
             bindings = <
 &none      &kp N0    &kp N9   &kp N8     &kp N7     &kp N6  &none                                                  &none        &none  &none  &none     &none     &none  &none
-&none      &kp P     &kp O    &kp I      &kp U      &kp Y   &none                                                  &none        &none  &none  &none     &none     &none  &none
-&kp SQT    &kp SEMI  &kp L    &kp K      &kp J      &kp H   &none   &kp PG_DN  &kp PG_UP       &none      &none    &none        &none  &none  &kp LBRC  &kp RBRC  &none  &none
-&kp LSHFT  &kp FSLH  &kp DOT  &kp COMMA  &kp M      &kp N                      &kp LGUI        &none                            &none  &none  &none     &none     &none  &none
+&none      &kp P     &kp O    &kp I      &kp U      &kp Y   &none                                                  &none        &none  &kp KP_N7  &kp KP_N8  &kp KP_N9     &none  &none
+&kp SQT    &kp SEMI  &kp L    &kp K      &kp J      &kp H   &none   &kp PG_DN  &kp PG_UP       &none      &none    &none        &kp KP_NUM  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_N0  &none
+&kp LSHFT  &kp FSLH  &kp DOT  &kp COMMA  &kp M      &kp N                      &kp LGUI        &none                            &none  &kp KP_N1  &kp KP_N2  &kp KP_N3     &none  &none
 &none      &kp LEFT  &kp UP   &kp DOWN   &kp RIGHT          &trans  &none      &kp LSHIFT      &kp LCTRL  &kp DEL  &lt 5 QMARK         &none  &none     &none     &none  &none
             >;
         };
