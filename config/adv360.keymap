@@ -71,133 +71,133 @@
             label = "grave_pipe";
             #binding-cells = <0>;
             bindings = <&kp GRAVE>, <&kp PIPE>;
-            mods = <(LGUI|LSHIFT|RGUI|RSHIFT)>;
+            mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
         };
         ppipe: pipe_pipe {
             compatible = "zmk,behavior-mod-morph";
             label = "pipe_pipe";
             #binding-cells = <0>;
             bindings = <&kp PIPE>, <&kp PIPE>;
-            mods = <(LGUI|LSHIFT|RGUI|RSHIFT)>;
+            mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
         };
         pkp_n1: plus_kp_n1 {
             compatible = "zmk,behavior-mod-morph";
             label = "plus_kp_n1";
             #binding-cells = <0>;
-            bindings = <&kp PLUS>, <&kp KP_N1>;
-            mods = <(LGUI|LSHIFT|RGUI|RSHIFT)>;
+            bindings = <&kp PLUS>, <&kp N1>;
+            mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
         };
         lkp_n2: left_bracket_kp_n2 {
             compatible = "zmk,behavior-mod-morph";
             label = "left_bracket_kp_n2";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACKET>, <&kp KP_N2>;
-            mods = <(LGUI|LSHIFT|RGUI|RSHIFT)>;
+            bindings = <&kp LEFT_BRACKET>, <&kp N2>;
+            mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
         };
         lkp_n3: left_brace_kp_n3 {
             compatible = "zmk,behavior-mod-morph";
             label = "left_brace_kp_n3";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACE>, <&kp KP_N3>;
-            mods = <(LGUI|LSHIFT|RGUI|RSHIFT)>;
+            bindings = <&kp LEFT_BRACE>, <&kp N3>;
+            mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
         };
         lkp_n4: left_parenthesis_kp_n4 {
             compatible = "zmk,behavior-mod-morph";
             label = "left_parenthesis_kp_n4";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_PARENTHESIS>, <&kp KP_N4>;
-            mods = <(LGUI|LSHIFT|RGUI|RSHIFT)>;
+            bindings = <&kp LEFT_PARENTHESIS>, <&kp N4>;
+            mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
         };
         akp_n5: amps_kp_n5 {
             compatible = "zmk,behavior-mod-morph";
             label = "amps_kp_n5";
             #binding-cells = <0>;
-            bindings = <&kp AMPS>, <&kp KP_N5>;
-            mods = <(LGUI|LSHIFT|RGUI|RSHIFT)>;
+            bindings = <&kp AMPS>, <&kp N5>;
+            mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
         };
         ekp_n6: equal_kp_n6 {
             compatible = "zmk,behavior-mod-morph";
             label = "equal_kp_n6";
             #binding-cells = <0>;
-            bindings = <&kp EQUAL>, <&kp KP_N6>;
-            mods = <(LGUI|LSHIFT|RGUI|RSHIFT)>;
+            bindings = <&kp EQUAL>, <&kp N6>;
+            mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
         };
         rkp_n7: right_parenthesis_kp_n7 {
             compatible = "zmk,behavior-mod-morph";
             label = "right_parenthesis_kp_n7";
             #binding-cells = <0>;
-            bindings = <&kp RIGHT_PARENTHESIS>, <&kp KP_N7>;
-            mods = <(LGUI|LSHIFT|RGUI|RSHIFT)>;
+            bindings = <&kp RIGHT_PARENTHESIS>, <&kp N7>;
+            mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
         };
         rkp_n8: right_brace_kp_n8 {
             compatible = "zmk,behavior-mod-morph";
             label = "right_brace_kp_n8";
             #binding-cells = <0>;
-            bindings = <&kp RIGHT_BRACE>, <&kp KP_N8>;
-            mods = <(LGUI|LSHIFT|RGUI|RSHIFT)>;
+            bindings = <&kp RIGHT_BRACE>, <&kp N8>;
+            mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
         };
         rkp_n9: right_bracket_kp_n9 {
             compatible = "zmk,behavior-mod-morph";
             label = "right_bracket_kp_n9";
             #binding-cells = <0>;
-            bindings = <&kp RIGHT_BRACKET>, <&kp KP_N9>;
-            mods = <(LGUI|LSHIFT|RGUI|RSHIFT)>;
+            bindings = <&kp RIGHT_BRACKET>, <&kp N9>;
+            mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
         };
         skp_n0: star_kp_n0 {
             compatible = "zmk,behavior-mod-morph";
             label = "star_kp_n0";
             #binding-cells = <0>;
-            bindings = <&kp STAR>, <&kp KP_N0>;
-            mods = <(LGUI|LSHIFT|RGUI|RSHIFT)>;
+            bindings = <&kp STAR>, <&kp N0>;
+            mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
         };
         eprcnt: excl_prcnt {
             compatible = "zmk,behavior-mod-morph";
             label = "excl_prcnt";
             #binding-cells = <0>;
             bindings = <&kp EXCL>, <&kp PRCNT>;
-            mods = <(LGUI|LSHIFT|RGUI|RSHIFT)>;
+            mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
         };
         dgrave: dllr_grave {
             compatible = "zmk,behavior-mod-morph";
             label = "dllr_grave";
             #binding-cells = <0>;
             bindings = <&kp DLLR>, <&kp GRAVE>;
-            mods = <(LGUI|LSHIFT|RGUI|RSHIFT)>;
+            mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
         };
         dtilde: dllr_tilde {
             compatible = "zmk,behavior-mod-morph";
             label = "dllr_tilde";
             #binding-cells = <0>;
             bindings = <&kp DLLR>, <&kp TILDE>;
-            mods = <(LGUI|LSHIFT|RGUI|RSHIFT)>;
+            mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
         };
         ggrave: grave_grave {
             compatible = "zmk,behavior-mod-morph";
             label = "grave_grave";
             #binding-cells = <0>;
             bindings = <&kp GRAVE>, <&kp GRAVE>;
-            mods = <(LGUI|LSHIFT|RGUI|RSHIFT)>;
+            mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
         };
         pgrave: pipe_grave {
             compatible = "zmk,behavior-mod-morph";
             label = "pipe_grave";
             #binding-cells = <0>;
             bindings = <&kp PIPE>, <&kp GRAVE>;
-            mods = <(LGUI|LSHIFT|RGUI|RSHIFT)>;
+            mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
         };
         bhash: bslh_hash {
             compatible = "zmk,behavior-mod-morph";
             label = "bslh_hash";
             #binding-cells = <0>;
             bindings = <&kp BSLH>, <&kp HASH>;
-            mods = <(LGUI|LSHIFT|RGUI|RSHIFT)>;
+            mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
         };
         acaret: at_caret {
             compatible = "zmk,behavior-mod-morph";
             label = "at_caret";
             #binding-cells = <0>;
             bindings = <&kp AT>, <&kp CARET>;
-            mods = <(LGUI|LSHIFT|RGUI|RSHIFT)>;
+            mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
         };
     };
 
@@ -208,7 +208,7 @@
             bindings = <
                 &kp EQUAL  &kp N1        &kp N2        &kp N3         &kp N4         &kp N5        &tog KEYPAD                                                 &mo MOD    &kp N6  &kp N7         &kp N8         &kp N9        &kp N0           &kp MINUS
                 &kp TAB    &kp Q         &kp W         &kp E          &kp R          &kp T         &to QWERTYP                                                 &kp PSCRN  &kp Y   &kp U          &kp I          &kp O         &kp P            &kp BSLH
-                &kp ESC    &hm_l LGUI A  &hm_l LALT S  &hm_l LCTRL D  &hm_l LSHFT F  &lt KEYPAD G  &to DVORAKP  &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &kp INS    &kp H   &hm_r RSHFT J  &hm_r RCTRL K  &hm_r RALT L  &hm_r RGUI SEMI  &kp SQT
+                &kp ESC    &hm_l LGUI A  &hm_l LALT S  &hm_l LCTRL D  &hm_l LSHFT F  &lt KEYPAD G  &to DVORAKP  &kp LCTRL  &kp LALT NUMNUMNUM     &kp LGUI   &kp RCTRL  &kp INS    &kp H   &hm_r RSHFT J  &hm_r RCTRL K  &hm_r RALT L  &hm_r RGUI SEMI  &kp SQT
                 &kp LSHFT  &kp Z         &kp X         &kp C          &kp V          &kp B                                 &kp HOME      &kp PG_UP                        &kp N   &kp M          &kp COMMA      &kp DOT       &kp FSLH         &kp RSHFT
                 &mo FN     &kp GRAVE     &kp CAPS      &kp LEFT       &kp RIGHT                    &kp BSPC     &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP         &kp DOWN       &kp LBKT      &kp RBKT         &mo FN
             >;
@@ -236,7 +236,7 @@
 
         dvorak {
             bindings = <
-                &trans   &trans        &trans        &trans         &trans         &trans        ______                                      ______  &trans   &trans         &trans         &trans        &trans        &trans
+        &trans   &trans        &trans        &trans         &trans         &trans        ______                                      ______  &trans   &trans         &trans         &trans        &trans        &trans
                 ______   &kp SEMI      &kp COMMA     &kp DOT        &kp P          &kp Y         ______                                      ______  &kp F    &kp G          &kp C          &kp R         &kp L         &trans
                 ______   &hm_l LGUI A  &hm_l LALT O  &hm_l LCTRL E  &hm_l LSHFT U  &lt KEYPAD I  ______  ______  ______      ______  ______  ______  &kp D    &hm_r RSHFT H  &hm_r RCTRL T  &hm_r RALT N  &hm_r RGUI S  &trans
                 ______   &kp SQT       &kp Q         &kp J          &kp K          &kp X                         ______      ______                  &kp B    &kp M          &kp W          &kp V         &kp Z         ______
