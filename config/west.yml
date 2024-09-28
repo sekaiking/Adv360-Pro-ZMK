@@ -4,10 +4,12 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: refil
       url-base: https://github.com/refil
+    - name: khoek
+      url-base: https://github.com/khoek
   projects:
     - name: zmk
-      remote: refil
-      revision: adv360-z3.5
+      remote: khoek
+      revision: test
       import: app/west.yml
   self:
     path: config
