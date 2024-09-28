@@ -52,11 +52,11 @@
 
         layer_base {
             bindings = <
-&mkp MB4   &kp N1     &kp N2     &kp N3   &kp N4   &kp N5  &kp F22                                                           &none           &kp N6  &kp N7    &kp N8     &kp N9    &kp N0     &none
-&mkp MB5   &kp Q      &kp W      &kp E    &kp R    &kp T   &kp F23                                                           &none           &kp Y   &kp U     &kp I      &kp O     &kp P      &none
-&kp ESC    &kp A      &kp S      &kp D    &kp F    &kp G   &kp F24       &none      &none          &none      &none          &none           &kp H   &kp J     &kp K      &kp L     &kp SEMI   &kp SQT
-&kp LSHFT  &kp Z      &kp X      &kp C    &kp V    &kp B                            &kp LALT       &kp LGUI                                  &kp N   &kp M     &kp COMMA  &kp DOT   &kp FSLH   &none
-&lt 7 F17  &lt 5 F18  &lt 6 F19  &kp F20  &kp F21          &lt_hp 3 TAB  &kp SPACE  &kp LCTRL      &sk RSHFT  &kp BACKSPACE  &lt_hp 4 ENTER          &kp LEFT  &kp UP     &kp DOWN  &kp RIGHT  &none
+&mkp MB4   &kp N1     &kp N2     &kp N3   &kp N4   &kp N5  &kp F22                                                              &none           &kp N6  &kp N7    &kp N8     &kp N9    &kp N0     &none
+&mkp MB5   &kp Q      &kp W      &kp E    &kp R    &kp T   &kp F23                                                              &none           &kp Y   &kp U     &kp I      &kp O     &kp P      &none
+&kp ESC    &kp A      &kp S      &kp D    &kp F    &kp G   &kp F24       &none      &kp LEFT_WIN      &none      &none          &none           &kp H   &kp J     &kp K      &kp L     &kp SEMI   &kp SQT
+&kp LSHFT  &kp Z      &kp X      &kp C    &kp V    &kp B                            &kp LALT          &kp LWIN                                  &kp N   &kp M     &kp COMMA  &kp DOT   &kp FSLH   &none
+&lt 7 F17  &lt 5 F18  &lt 6 F19  &kp F20  &kp F21          &lt_hp 3 TAB  &kp SPACE  &kp LCTRL         &sk RSHFT  &kp BACKSPACE  &lt_hp 4 ENTER          &kp LEFT  &kp UP     &kp DOWN  &kp RIGHT  &none
             >;
         };
 
@@ -82,11 +82,11 @@
 
         layer_m_lthumb {
             bindings = <
-&trans   &kp N0    &kp N9   &kp N8     &kp N7     &kp N6  &trans                                              &trans  &trans      &trans     &trans     &trans     &trans     &trans
-&trans   &kp P     &kp O    &kp I      &kp U      &kp Y   &trans                                              &trans  &trans      &kp KP_N7  &kp KP_N8  &kp KP_N9  &trans     &trans
-&kp SQT  &kp SEMI  &kp L    &kp K      &kp J      &kp H   &trans  &trans  &trans          &trans     &trans   &trans  &kp KP_NUM  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_N0  &trans
-&trans   &kp FSLH  &kp DOT  &kp COMMA  &kp M      &kp N                   &kp LGUI        &trans                      &trans      &kp KP_N1  &kp KP_N2  &kp KP_N3  &trans     &trans
-&trans   &kp LEFT  &kp UP   &kp DOWN   &kp RIGHT          &trans  &trans  &kp LSHIFT      &kp LCTRL  &kp DEL  &trans              &kp HOME   &kp PG_UP  &kp PG_DN  &kp END    &trans
+&trans   &kp N0    &kp N9   &kp N8     &kp N7     &kp N6  &trans                                          &trans  &trans      &trans     &trans     &trans     &trans     &trans
+&trans   &kp P     &kp O    &kp I      &kp U      &kp Y   &trans                                          &trans  &trans      &kp KP_N7  &kp KP_N8  &kp KP_N9  &trans     &trans
+&kp SQT  &kp SEMI  &kp L    &kp K      &kp J      &kp H   &trans  &trans  &trans      &trans     &trans   &trans  &kp KP_NUM  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_N0  &trans
+&trans   &kp FSLH  &kp DOT  &kp COMMA  &kp M      &kp N                   &trans      &trans                      &trans      &kp KP_N1  &kp KP_N2  &kp KP_N3  &trans     &trans
+&trans   &kp LEFT  &kp UP   &kp DOWN   &kp RIGHT          &trans  &trans  &trans      &kp LCTRL  &kp DEL  &trans              &kp HOME   &kp PG_UP  &kp PG_DN  &kp END    &trans
             >;
         };
 
