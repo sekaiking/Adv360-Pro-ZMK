@@ -1,36 +1,192 @@
-  macro_quotes: macro_quotes {
-    compatible = "zmk,behavior-macro";
-    label = "macro_quotes";
-    #binding-cells = <0>;
-    bindings = <&kp SQT>, <&kp SQT>, <&kp LEFT>;
-  };
-  macro_dquotes: macro_dquotes {
-    compatible = "zmk,behavior-macro";
-    label = "macro_dquotes";
-    #binding-cells = <0>;
-    bindings = <&kp DQT>, <&kp DQT>, <&kp LEFT>;
-  };
-  macro_braces: macro_braces {
-    compatible = "zmk,behavior-macro";
-    label = "macro_braces";
-    #binding-cells = <0>;
-    bindings = <&kp LBRC>, <&kp RBRC>, <&kp LEFT>;
-  };
-  macro_parens: macro_parens {
-    compatible = "zmk,behavior-macro";
-    label = "macro_parens";
-    #binding-cells = <0>;
-    bindings = <&kp LPAR>, <&kp RPAR>, <&kp LEFT>;
-  };
-  macro_brackets: macro_brackets {
-    compatible = "zmk,behavior-macro";
-    label = "macro_brackets";
-    #binding-cells = <0>;
-    bindings = <&kp LBKT>, <&kp RBKT>, <&kp LEFT>;
-  };
-  macro_kinesis: macro_kinesis {
-    compatible = "zmk,behavior-macro";
-    label = "macro_kinesis";
-    #binding-cells = <0>;
-    bindings = <&kp LS(K)>, <&kp I>, <&kp N>, <&kp E>, <&kp S>, <&kp I>, <&kp S>;
-  };
+macro_fp: macro_fp {
+  compatible = "zmk,behavior-macro";
+  label = "macro_kinesis";
+  #binding-cells = <0>;
+  bindings = 
+    <&kp F>, <&kp R>, <&kp E>, <&kp E>, <&kp SPACE>, 
+    <&kp P>, <&kp A>, <&kp L>, <&kp E>, <&kp S>, <&kp T>, <&kp I>, <&kp N>, <&kp E>;
+};
+
+// Home row modifier behavior for standard keys
+hm: homerow_mods {
+  compatible = "zmk,behavior-hold-tap";
+  label = "HOMEROW_MODS";
+  #binding-cells = <2>;
+  tapping-term-ms = <200>;
+  quick_tap_ms = <175>;
+  flavor = "tap-preferred";
+  bindings = <&kp>, <&kp>;
+};
+
+// Home row modifier behavior for left hand
+hm_l: hm_l {
+  compatible = "zmk,behavior-hold-tap";
+  label = "HM_L";
+  bindings = <&kp>, <&kp>;
+  #binding-cells = <2>;
+  flavor = "balanced";
+  tapping-term-ms = <200>;
+  quick-tap-ms = <175>;
+  hold-trigger-key-positions = <66 35 36 52 67 65 7 8 9 10 11 12 13 21 22 23 24 25 26 27 38 39 40 41 42 43 44 45 54 55 56 57 58 59 70 71 72 73 74 75 37 53 69 68>;
+  hold-trigger-on-release;
+  global-quick-tap;
+};
+
+// Home row modifier behavior for right hand
+hm_r: hm_r {
+  compatible = "zmk,behavior-hold-tap";
+  label = "HM_R";
+  bindings = <&kp>, <&kp>;
+  #binding-cells = <2>;
+  tapping-term-ms = <200>;
+  quick-tap-ms = <175>;
+  flavor = "balanced";
+  hold-trigger-key-positions = <0 1 2 3 4 5 6 14 15 16 17 18 19 20 28 29 30 31 32 33 34 35 36 46 47 48 49 50 51 52 60 61 62 63 64 65 66 67 37 38 53 68 69 70>;
+  hold-trigger-on-release;
+  global-quick-tap;
+};
+
+// Modifier behavior to switch between grave and pipe
+gpipe: grave_pipe {
+  compatible = "zmk,behavior-mod-morph";
+  label = "grave_pipe";
+  #binding-cells = <0>;
+  bindings = <&kp GRAVE>, <&kp PIPE>;
+  mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
+};
+
+
+// Modifier behavior to switch between plus and number 1
+pkp_n1: plus_kp_n1 {
+  compatible = "zmk,behavior-mod-morph";
+  label = "plus_kp_n1";
+  #binding-cells = <0>;
+  bindings = <&kp PLUS>, <&kp N1>;
+  mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
+};
+
+// Modifier behavior to switch between left bracket and number 2
+lkp_n2: left_bracket_kp_n2 {
+  compatible = "zmk,behavior-mod-morph";
+  label = "left_bracket_kp_n2";
+  #binding-cells = <0>;
+  bindings = <&kp LEFT_BRACKET>, <&kp N2>;
+  mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
+};
+
+// Modifier behavior to switch between left brace and number 3
+lkp_n3: left_brace_kp_n3 {
+  compatible = "zmk,behavior-mod-morph";
+  label = "left_brace_kp_n3";
+  #binding-cells = <0>;
+  bindings = <&kp LEFT_BRACE>, <&kp N3>;
+  mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
+};
+
+// Modifier behavior to switch between left parenthesis and number 4
+lkp_n4: left_parenthesis_kp_n4 {
+  compatible = "zmk,behavior-mod-morph";
+  label = "left_parenthesis_kp_n4";
+  #binding-cells = <0>;
+  bindings = <&kp LEFT_PARENTHESIS>, <&kp N4>;
+  mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
+};
+
+// Modifier behavior to switch between ampersand and number 5
+akp_n5: amps_kp_n5 {
+  compatible = "zmk,behavior-mod-morph";
+  label = "amps_kp_n5";
+  #binding-cells = <0>;
+  bindings = <&kp AMPS>, <&kp N5>;
+  mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
+};
+
+// Modifier behavior to switch between equal sign and number 6
+ekp_n6: equal_kp_n6 {
+  compatible = "zmk,behavior-mod-morph";
+  label = "equal_kp_n6";
+  #binding-cells = <0>;
+  bindings = <&kp EQUAL>, <&kp N6>;
+  mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
+};
+
+// Modifier behavior to switch between right parenthesis and number 7
+rkp_n7: right_parenthesis_kp_n7 {
+  compatible = "zmk,behavior-mod-morph";
+  label = "right_parenthesis_kp_n7";
+  #binding-cells = <0>;
+  bindings = <&kp RIGHT_PARENTHESIS>, <&kp N7>;
+  mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
+};
+
+// Modifier behavior to switch between right brace and number 8
+rkp_n8: right_brace_kp_n8 {
+  compatible = "zmk,behavior-mod-morph";
+  label = "right_brace_kp_n8";
+  #binding-cells = <0>;
+  bindings = <&kp RIGHT_BRACE>, <&kp N8>;
+  mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
+};
+
+// Modifier behavior to switch between right bracket and number 9
+rkp_n9: right_bracket_kp_n9 {
+  compatible = "zmk,behavior-mod-morph";
+  label = "right_bracket_kp_n9";
+  #binding-cells = <0>;
+  bindings = <&kp RIGHT_BRACKET>, <&kp N9>;
+  mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
+};
+
+// Modifier behavior to switch between star and number 0
+skp_n0: star_kp_n0 {
+  compatible = "zmk,behavior-mod-morph";
+  label = "star_kp_n0";
+  #binding-cells = <0>;
+  bindings = <&kp STAR>, <&kp N0>;
+  mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
+};
+
+// Modifier behavior to switch between exclamation mark and percent sign
+eprcnt: excl_prcnt {
+  compatible = "zmk,behavior-mod-morph";
+  label = "excl_prcnt";
+  #binding-cells = <0>;
+  bindings = <&kp EXCL>, <&kp PRCNT>;
+  mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
+};
+
+// Modifier behavior to switch between dollar sign and tilde
+dtilde: dllr_tilde {
+  compatible = "zmk,behavior-mod-morph";
+  label = "dllr_tilde";
+  #binding-cells = <0>;
+  bindings = <&kp DLLR>, <&kp TILDE>;
+  mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
+};
+
+// Modifier behavior to switch between pipe and grave accent
+pgrave: pipe_grave {
+  compatible = "zmk,behavior-mod-morph";
+  label = "pipe_grave";
+  #binding-cells = <0>;
+  bindings = <&kp PIPE>, <&kp GRAVE>;
+  mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
+};
+
+// Modifier behavior to switch between backslash and hash sign
+bhash: bslh_hash {
+  compatible = "zmk,behavior-mod-morph";
+  label = "bslh_hash";
+  #binding-cells = <0>;
+  bindings = <&kp BSLH>, <&kp HASH>;
+  mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
+};
+
+// Modifier behavior to switch between at sign and caret
+acaret: at_caret {
+  compatible = "zmk,behavior-mod-morph";
+  label = "at_caret";
+  #binding-cells = <0>;
+  bindings = <&kp AT>, <&kp CARET>;
+  mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
+};
