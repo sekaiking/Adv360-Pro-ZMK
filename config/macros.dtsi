@@ -7,6 +7,22 @@ macro_fp: macro_fp {
     <&kp P>, <&kp A>, <&kp L>, <&kp E>, <&kp S>, <&kp T>, <&kp I>, <&kp N>, <&kp E>;
 };
 
+to_ar: macro_arabic {
+  compatible = "zmk,behavior-macro";
+  label = "to_ar";
+  #binding-cells = <0>;
+  bindings = 
+    <&kp CAPS>, <&to QWERTY>;
+};
+
+to_arp: macro_arabic_prog {
+  compatible = "zmk,behavior-macro";
+  label = "to_arp";
+  #binding-cells = <0>;
+  bindings = 
+    <&kp CAPS>, <&to QWERTYP>;
+};
+
 // Home row modifier behavior for standard keys
 hm: homerow_mods {
   compatible = "zmk,behavior-hold-tap";
