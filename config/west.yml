@@ -8,11 +8,11 @@ manifest:
       url-base: https://github.com/urob
   projects:
     - name: zmk
-      remote: refil
-      revision: adv360-z3.5-2
+      remote: zmkfirmware
+      revision: v0.3
       import: app/west.yml
     - name: zmk-unicode
       remote: urob
-      revision: adv360-z3.5-2
+      revision: v0.3
   self:
     path: config
