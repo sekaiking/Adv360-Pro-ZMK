@@ -13,7 +13,11 @@ to_ar: macro_arabic {
   #binding-cells = <0>;
   bindings = <
       &tog QWERTY,
-      &mods LWIN LALT &kp K
+      &hold LWIN,
+      &hold LALT,
+      &kp K,
+      &release LALT,
+      &release LWIN
   >;
 };
 
