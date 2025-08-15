@@ -15,6 +15,10 @@
 #define FN 5
 #define MOD 6
 
+&uc {
+    default-mode = <UC_MODE_LINUX>;
+};
+
 / {
     behaviors {
       #include "macros.dtsi"
@@ -26,7 +30,4 @@
     #include "keymaps.dtsi"
   };
 
-  &uc {
-      default-mode = <UC_MODE_LINUX>;
-  };
 };
