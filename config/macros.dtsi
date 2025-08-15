@@ -8,12 +8,16 @@ macro_fp: macro_fp {
 };
 
 to_ar: macro_arabic {
-  compatible = "zmk,behavior-hold-tap";
+  compatible = "zmk,behavior-macro";
   label = "to_ar";
   #binding-cells = <0>;
-  bindings = 
-      <&tog QWERTY>,
-      <&kp LWIN>, <&kp LALT>, <&kp K>; 
+  bindings
+      = <&macro_press &kp LWIN>
+      , <&macro_press &kp LALT>
+      , <&macro_tap &kp K>
+      , <&macro_release &kp LWIN>
+      , <&macro_release &kp LALT>
+      ;
 };
 
 to_arp: macro_arabic_prog {
