@@ -8,10 +8,9 @@ macro_fp: macro_fp {
 };
 
 to_ar: macro_arabic {
-  compatible = "zmk,behavior-macro";
+  compatible = "zmk,behavior-hold-tap";
   label = "to_ar";
   #binding-cells = <0>;
-  tapping-term-ms = <200>;
   bindings = 
       <&tog QWERTY>,
       <&kp LWIN>, <&kp LALT>, <&kp K>; 
