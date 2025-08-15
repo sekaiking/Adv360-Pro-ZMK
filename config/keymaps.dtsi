@@ -41,7 +41,7 @@ querty_prog {
 };
 
 dvorak_prog {
-  display-name = "DvorakP"
+  display-name = "DvorakP";
   bindings = <
     &pgrave  &pkp_n1       &lkp_n2       &lkp_n3        &lkp_n4        &akp_n5       &trans                                      &trans  &ekp_n6  &rkp_n7        &rkp_n8        &rkp_n9       &skp_n0       &eprcnt
     &trans   &kp SEMI      &kp COMMA     &kp DOT        &kp P          &kp Y         &trans                                      &trans  &kp F    &kp G          &kp C          &kp R         &kp L         &bhash
@@ -52,7 +52,7 @@ dvorak_prog {
 };
 
 dvorak {
-  display-name = "Dvorak"
+  display-name = "Dvorak";
   bindings = <
     &trans     &trans        &trans        &trans         &trans         &trans        &trans                                      &trans  &trans   &trans         &trans         &trans        &trans        &trans
     &trans     &kp SEMI      &kp COMMA     &kp DOT        &kp P          &kp Y         &trans                                      &trans  &kp F    &kp G          &kp C          &kp R         &kp L         &trans
@@ -63,7 +63,7 @@ dvorak {
 };
 
 keypad {
-  display-name = "Kp"
+  display-name = "Kp";
   bindings = <
     &trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans     &trans  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &trans
     &trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans     &trans  &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &trans
@@ -74,7 +74,7 @@ keypad {
 };
 
 fn {
-  display-name = "Fn"
+  display-name = "Fn";
   bindings = <
     &kp F1  &kp F2  &kp F3     &kp F4         &kp F5          &kp F6  &to_arp                                           &trans  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
     &trans  &trans  &trans     &trans         &trans          &trans  &to QWERTY                                       &none  &trans  &trans  &trans  &trans   &trans   &trans
@@ -85,7 +85,7 @@ fn {
 };
 
 mod {
-  display-name = "Mod"
+  display-name = "Mod";
   bindings = <
     &none           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                  &trans                  &none  &none      &none      &none  &none  &none
     &none           &none        &none        &none        &none        &none        &bootloader                                             &bootloader             &none  &none      &none      &none  &none  &none
