@@ -12,7 +12,8 @@ to_ar: macro_arabic {
   label = "to_ar";
   #binding-cells = <0>;
   bindings = 
-    <&kp CAPS>, <&to QWERTY>;
+      <&tog QWERTY>,
+      <&kp LWIN>, <&kp LALT>, <&kp K>;
 };
 
 to_arp: macro_arabic_prog {
