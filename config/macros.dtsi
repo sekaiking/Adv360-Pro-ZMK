@@ -11,9 +11,10 @@ to_ar: macro_arabic {
   compatible = "zmk,behavior-macro";
   label = "to_ar";
   #binding-cells = <0>;
-  bindings = 
-      <&tog QWERTY>,
-      <&kp LWIN>, <&kp LALT>, <&kp K>;
+  bindings = <
+      &tog QWERTY,
+      &mods LWIN LALT &kp K
+  >;
 };
 
 to_arp: macro_arabic_prog {
