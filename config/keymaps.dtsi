@@ -21,7 +21,7 @@
 qwerty {
   display-name = "Qwerty";
   bindings = <
-    &kp EQUAL  &kp N1        &kp N2        &kp N3         &kp N4         &kp N5        &to_ar                                                 &mo MOD    &kp N6  &kp N7         &kp N8         &kp N9        &kp N0           &kp MINUS
+    &kp EQUAL  &kp N1        &kp N2        &kp N3         &kp N4         &kp N5        &to KEYPAD                                                 &mo MOD    &kp N6  &kp N7         &kp N8         &kp N9        &kp N0           &kp MINUS
     &kp TAB    &kp Q         &kp W         &kp E          &kp R          &kp T         &to QWERTYP                                                 &kp PSCRN  &kp Y   &kp U          &kp I          &kp O         &kp P            &kp BSLH
     &kp ESC    &hm_l LGUI A  &hm_l LALT S  &hm_l LCTRL D  &hm_l LSHFT F  &lt KEYPAD G  &to DVORAKP  &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &kp INS    &kp H   &hm_r RSHFT J  &hm_r RCTRL K  &hm_r RALT L  &hm_r RGUI SEMI  &kp SQT
     &kp LSHFT  &kp Z         &kp X         &kp C          &kp V          &kp B                                 &kp HOME      &kp PG_UP                        &kp N   &kp M          &kp COMMA      &kp DOT       &kp FSLH         &kp RSHFT

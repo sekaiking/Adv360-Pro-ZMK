@@ -25,4 +25,8 @@
     compatible = "zmk,keymap";
     #include "keymaps.dtsi"
   };
+
+  &uc {
+      default-mode = <UC_MODE_LINUX>;
+  };
 };
