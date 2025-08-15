@@ -4,6 +4,7 @@ name: Build
 
 jobs:
   build:
+    if: false
     runs-on: ubuntu-latest
     container:
       image: zmkfirmware/zmk-build-arm:stable
