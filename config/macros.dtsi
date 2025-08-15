@@ -12,12 +12,12 @@ to_ar: macro_arabic {
   label = "to_ar";
   #binding-cells = <0>;
   bindings
-      = <&tog QWERTY>
-      , <&macro_press &kp LWIN>
+      = <&macro_press &kp LWIN>
       , <&macro_press &kp LALT>
       , <&macro_tap &kp K>
       , <&macro_release &kp LWIN>
       , <&macro_release &kp LALT>
+      , <&tog DVORAKP>
       ;
 };
 
