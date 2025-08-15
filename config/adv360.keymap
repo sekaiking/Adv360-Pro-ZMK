@@ -6,7 +6,7 @@
 #include <dt-bindings/zmk/stp.h>
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/pointing.h>
-#include "arak_unicode.dtsi"
+#include "arabic_unicode.dtsi"
 
 #define QWERTY 0
 #define QWERTYP 1
