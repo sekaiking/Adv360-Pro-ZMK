@@ -21,7 +21,7 @@
 qwerty {
   display-name = "Qwerty";
   bindings = <
-    &kp EQUAL  &kp N1        &kp N2        &kp N3         &kp N4         &kp N5        &to KEYPAD                                                 &mo MOD    &kp N6  &kp N7         &kp N8         &kp N9        &kp N0           &kp MINUS
+    &kp EQUAL  &kp N1        &kp N2        &kp N3         &kp N4         &kp N5        &to ARAK                                                 &mo MOD    &kp N6  &kp N7         &kp N8         &kp N9        &kp N0           &kp MINUS
     &kp TAB    &kp Q         &kp W         &kp E          &kp R          &kp T         &to QWERTYP                                                 &kp PSCRN  &kp Y   &kp U          &kp I          &kp O         &kp P            &kp BSLH
     &kp ESC    &hm_l LGUI A  &hm_l LALT S  &hm_l LCTRL D  &hm_l LSHFT F  &lt KEYPAD G  &to DVORAKP  &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &kp INS    &kp H   &hm_r RSHFT J  &hm_r RCTRL K  &hm_r RALT L  &hm_r RGUI SEMI  &kp SQT
     &kp LSHFT  &kp Z         &kp X         &kp C          &kp V          &kp B                                 &kp HOME      &kp PG_UP                        &kp N   &kp M          &kp COMMA      &kp DOT       &kp FSLH         &kp RSHFT
@@ -92,5 +92,16 @@ mod {
     &studio_unlock  &none        &none        &none        &none        &none        &none       &none  &none     &bt BT_CLR  &none      &stp STP_BAT  &none  &none      &none      &none  &none  &none
     &none           &none        &none        &none        &none        &none                             &none     &none                                          &none  &none      &none      &none  &none  &none
     &none           &none        &none        &none        &none                      &none       &none  &none     &none      &bl BL_TOG  &rgb_ug RGB_TOG                 &bl BL_INC  &bl BL_DEC  &none  &none  &none
+  >;
+};
+
+arak_layer {
+  display-name = "Arak Unicode";
+  bindings = <
+    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+    &trans  &uc UC_AR_HAMZA           &uc UC_AR_ALEF_MADDA       &uc UC_AR_ALEF_HAMZA_ABOVE  &uc UC_AR_WAW_HAMZA       &uc UC_AR_ALEF_HAMZA_BELOW  &trans  &trans  &uc UC_AR_YEH_HAMZA       &uc UC_AR_ALEF           &uc UC_AR_BEH       &uc UC_AR_TEH_MARBUTA   &uc UC_AR_TEH   &uc UC_AR_THEH
+    &trans  &uc UC_AR_JEEM            &uc UC_AR_HAH               &uc UC_AR_KHAH               &uc UC_AR_DAL               &uc UC_AR_THAL              &trans  &trans  &uc UC_AR_REH              &uc UC_AR_ZAIN           &uc UC_AR_SEEN     &uc UC_AR_SHEEN          &uc UC_AR_SAD  &uc UC_AR_DAD
+    &trans  &uc UC_AR_TAH             &uc UC_AR_ZAH               &uc UC_AR_AIN               &uc UC_AR_GHAIN            &uc UC_AR_TATWEEL           &trans  &trans  &uc UC_AR_FEH              &uc UC_AR_QAF            &uc UC_AR_KAF     &uc UC_AR_LAM            &uc UC_AR_MEEM &uc UC_AR_NOON
+    &trans  &uc UC_AR_HEH             &uc UC_AR_WAW               &uc UC_AR_ALEF_MAKSURA     &uc UC_AR_YEH               &trans                      &trans  &trans  &trans                   &trans                   &trans           &trans                  &trans         &trans
   >;
 };
