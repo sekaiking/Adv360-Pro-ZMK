@@ -1,0 +1,71 @@
+/*
+ * Arak keyboard unicode characters
+ *
+ * This file defines convenience macros for Arabic and extended Arabic code points
+ * to be used in ZMK keymaps with &uc.
+ */
+
+#pragma once
+
+#define UC_AR_HAMZA           0x0621 0x0621  // ء/ء
+#define UC_AR_ALEF_MADDA      0x0622 0x0622  // آ/آ
+#define UC_AR_ALEF_HAMZA_ABOVE 0x0623 0x0623 // أ/أ
+#define UC_AR_WAW_HAMZA       0x0624 0x0624  // ؤ/ؤ
+#define UC_AR_ALEF_HAMZA_BELOW 0x0625 0x0625 // إ/إ
+#define UC_AR_YEH_HAMZA       0x0626 0x0626  // ئ/ئ
+#define UC_AR_ALEF            0x0627 0x0627  // ا/ا
+#define UC_AR_BEH             0x0628 0x0628  // ب/ب
+#define UC_AR_TEH_MARBUTA     0x0629 0x0629  // ة/ة
+#define UC_AR_TEH             0x062A 0x062A  // ت/ت
+#define UC_AR_THEH            0x062B 0x062B  // ث/ث
+#define UC_AR_JEEM            0x062C 0x062C  // ج/ج
+#define UC_AR_HAH             0x062D 0x062D  // ح/ح
+#define UC_AR_KHAH            0x062E 0x062E  // خ/خ
+#define UC_AR_DAL             0x062F 0x062F  // د/د
+#define UC_AR_THAL            0x0630 0x0630  // ذ/ذ
+#define UC_AR_REH             0x0631 0x0631  // ر/ر
+#define UC_AR_ZAIN            0x0632 0x0632  // ز/ز
+#define UC_AR_SEEN            0x0633 0x0633  // س/س
+#define UC_AR_SHEEN           0x0634 0x0634  // ش/ش
+#define UC_AR_SAD             0x0635 0x0635  // ص/ص
+#define UC_AR_DAD             0x0636 0x0636  // ض/ض
+#define UC_AR_TAH             0x0637 0x0637  // ط/ط
+#define UC_AR_ZAH             0x0638 0x0638  // ظ/ظ
+#define UC_AR_AIN             0x0639 0x0639  // ع/ع
+#define UC_AR_GHAIN           0x063A 0x063A  // غ/غ
+#define UC_AR_TATWEEL          0x0640 0x0640 // ـ/ـ
+#define UC_AR_FEH             0x0641 0x0641  // ف/ف
+#define UC_AR_QAF             0x0642 0x0642  // ق/ق
+#define UC_AR_KAF             0x0643 0x0643  // ك/ك
+#define UC_AR_LAM             0x0644 0x0644  // ل/ل
+#define UC_AR_MEEM            0x0645 0x0645  // م/م
+#define UC_AR_NOON            0x0646 0x0646  // ن/ن
+#define UC_AR_HEH             0x0647 0x0647  // ه/ه
+#define UC_AR_WAW             0x0648 0x0648  // و/و
+#define UC_AR_ALEF_MAKSURA    0x0649 0x0649  // ى/ى
+#define UC_AR_YEH             0x064A 0x064A  // ي/ي
+#define UC_AR_FATHATAN        0x064B 0x064B  // ً/ً
+#define UC_AR_DAMMATAN        0x064C 0x064C  // ٌ/ٌ
+#define UC_AR_KASRATAN        0x064D 0x064D  // ٍ/ٍ
+#define UC_AR_FATHA           0x064E 0x064E  // َ/َ
+#define UC_AR_DAMMA           0x064F 0x064F  // ُ/ُ
+#define UC_AR_KASRA           0x0650 0x0650  // ِ/ِ
+#define UC_AR_SHADDA          0x0651 0x0651  // ّ/ّ
+#define UC_AR_SUKUN           0x0652 0x0652  // ْ/ْ
+#define UC_AR_0               0x0660 0x0660  // ٠/٠
+#define UC_AR_1               0x0661 0x0661  // ١/١
+#define UC_AR_2               0x0662 0x0662  // ٢/٢
+#define UC_AR_3               0x0663 0x0663  // ٣/٣
+#define UC_AR_4               0x0664 0x0664  // ٤/٤
+#define UC_AR_5               0x0665 0x0665  // ٥/٥
+#define UC_AR_6               0x0666 0x0666  // ٦/٦
+#define UC_AR_7               0x0667 0x0667  // ٧/٧
+#define UC_AR_8               0x0668 0x0668  // ٨/٨
+#define UC_AR_9               0x0669 0x0669  // ٩/٩
+
+// Extended Arabic letters
+#define UC_AR_PEH             0x067E 0x067E  // پ/پ
+#define UC_AR_TCHET           0x0686 0x0686  // چ/چ
+#define UC_AR_JEH             0x0698 0x0698  // ژ/ژ
+#define UC_AR_VEH             0x06A4 0x06A4  // ڤ/ڤ
+#define UC_AR_GAF             0x06AF 0x06AF  // گ/گ
