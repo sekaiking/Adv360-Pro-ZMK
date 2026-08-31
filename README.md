@@ -1,15 +1,53 @@
 # Kinesis Advantage 360 Pro ZMK Config
 
-## Features
+Personal ZMK configuration for the Kinesis Advantage 360 Pro.
 
-- [x] Home row mods
-- [x] Programmer Qwerty
-- [x] Dvorak
-- [x] Programmer Dvorak
+## Layouts
 
-## Layers Preview
+### QWERTY
 
-![keyboard preview](assets/preview.svg)
+Used for general typing and languages other than English.
+
+Features home row mods for:
+
+- `A` → GUI
+- `S` → ALT
+- `D` → CTRL
+- `F` → SHIFT
+
+`G` provides access to the keypad layer.
+
+### DvorakP
+
+Programmer Dvorak layout used for English and programming.
+
+Uses the same home row modifier setup as QWERTY.
+
+### Gaming
+
+A minimal QWERTY-based gaming layout.
+
+- `QWERT → TQWER`
+- `ASDFG → GASDF`
+- This places `WASD` on the physical `ESDF` keys.
+- Space and Backspace are swapped for easier access while using the mouse.
+- Left FN become LCTRL
+- Home row mods are disabled.
+
+### Keypad
+
+Dedicated numeric keypad layer for occasional numeric input.
+
+### Fn
+
+Provides function keys, layout switching, and utility macros, including left and right auto-clickers.
+
+FN + ESC -> auto left clicker
+FN + A -> auto right clicker
+
+### Mod
+
+Keyboard configuration and maintenance controls, including Bluetooth profiles, bootloader, ZMK Studio, battery, RGB, and backlight controls.
 
 ## Building the Firmware with GitHub Actions
 
